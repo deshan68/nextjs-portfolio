@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  --black: #111111;
+  --white: #fdfdfd;
+  --primary_blue: #f2f7fd;
+  --action_blue: #2178de;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* scroll-behavior: smooth; */
+}
+
+@font-face {
+  font-family: "LeagueBold";
+  src: url("../public/font/legue-sparta/LeagueSpartan-Bold.ttf");
+}
+@font-face {
+  font-family: "JuraBold";
+  src: url("../public/font/jura/Jura-Bold.ttf");
+}
+@font-face {
+  font-family: "LeagueLight";
+  src: url("../public/font/legue-sparta/LeagueSpartan-Light.ttf");
+}
+@font-face {
+  font-family: "LeagueSemiBold";
+  src: url("../public/font/legue-sparta/LeagueSpartan-SemiBold.ttf");
+}
+@font-face {
+  font-family: "LeagueExtraLight";
+  src: url("../public/font/legue-sparta/LeagueSpartan-ExtraLight.ttf");
+}
+
+.app {
+  @apply relative z-10 flex justify-center items-center flex-col max-w-full;
+}
+.dropdown {
+  @apply absolute top-full right-0 flex flex-col bg-white h-[90vh] w-full justify-center items-center;
+}
