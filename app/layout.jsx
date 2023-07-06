@@ -13,7 +13,7 @@ const RootLayout = ({ children }) => {
         <main className="relative">
           <Navbar />
           {children}
-          <Footer />
+          {/* <Footer /> */}
 
           {/* social media icons and email  */}
           <SocialMediaBar />

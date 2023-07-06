@@ -41,3 +41,9 @@
 .dropdown {
   @apply absolute top-full right-0 flex flex-col bg-white h-[90vh] w-full justify-center items-center;
 }
+.title {
+  @apply font-leagueSemiBold text-5xl;
+}
+.paragraph {
+  @apply font-leagueLight text-xl pt-10;
+}
