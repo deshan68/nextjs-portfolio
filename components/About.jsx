@@ -32,14 +32,17 @@ export const About = () => {
         </span>
 
         {/* card container */}
-        <div className="pt-10 flex gap-20">
+        <div className="pt-10 flex gap-20 sm:flex-row flex-col">
           {aboutDetails.map((item, indx) => (
-            <div className="h-[400px] w-[274px] bg-primary_blue rounded-lg flex flex-col justify-around items-center p-5">
+            <div
+              key={indx}
+              className="h-[400px] w-[274px] bg-primary_blue rounded-lg flex flex-col justify-around items-center p-5"
+            >
               <Image
                 src={item.imgUrl}
                 width={250}
                 height={231}
-                alt="about 1"
+                alt={item.title}
                 className="object-contain rounded-lg"
               />
 

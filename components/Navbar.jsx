@@ -30,26 +30,19 @@ export const Navbar = () => {
         <m.span variants={liVariants}>u</m.span>
         <m.span variants={liVariants}>n</m.span>
       </m.div>
-      <div
-        className="sm:hidden bg-action_blue p-2 rounded-full"
-        onClick={() => setToggleDropdown((prev) => !prev)}
-      >
-        {toggleDropdown ? (
-          <Image
-            src={closeIcon}
-            width={30}
-            height={30}
-            className="object-contain"
-          />
-        ) : (
+      {!toggleDropdown && (
+        <div
+          className="sm:hidden bg-action_blue p-2 rounded-full"
+          onClick={() => setToggleDropdown((prev) => !prev)}
+        >
           <Image
             src={menuIcon}
             width={30}
             height={30}
             className="object-contain"
           />
-        )}
-      </div>
+        </div>
+      )}
 
       {/* desktop navigation */}
       <div className="items-center sm:flex hidden">
@@ -77,6 +70,17 @@ export const Navbar = () => {
           }}
           className="sm:hidden dropdown"
         >
+          <div
+            className="sm:hidden bg-action_blue p-2 rounded-full top-10 right-10 absolute "
+            onClick={() => setToggleDropdown((prev) => !prev)}
+          >
+            <Image
+              src={closeIcon}
+              width={30}
+              height={30}
+              className="object-contain "
+            />
+          </div>
           <m.div
             variants={ulVariants}
             initial={"hidden"}

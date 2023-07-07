@@ -8,7 +8,7 @@ import { socialIconParentVariant, socialIconVariant } from "@utils/motion";
 
 export const SocialMediaBar = () => {
   return (
-    <div className="bottom-0 fixed">
+    <div className="bottom-0 fixed z-10">
       <m.div
         variants={socialIconParentVariant}
         initial={"hidden"}

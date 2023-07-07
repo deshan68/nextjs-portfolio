@@ -5,16 +5,16 @@ import { motion as m } from "framer-motion";
 
 export const EmailBar = () => {
   return (
-    <div className="bottom-36 left-[89.5%] fixed">
+    <div className="bottom-36 right-[-100px] fixed z-10 rotate-90">
       <m.div
         initial={{
-          rotate: 90,
+          rotate: 0,
           opacity: 0,
-          y: "100%",
+          x: "100%",
         }}
         animate={{
           opacity: 1,
-          y: "0%",
+          x: "0%",
           transition: {
             duration: 1,
             type: "spring",
@@ -23,7 +23,7 @@ export const EmailBar = () => {
             delay: 1,
           },
         }}
-        className="flex justify-center items-center gap-2 font-leagueExtraLight text-xl rotate-90"
+        className="flex justify-center items-center gap-2 font-leagueExtraLight text-xl"
       >
         <span>arundeshan@gmail.com</span>
         <div className="bg-black w-14 h-[1px]" />

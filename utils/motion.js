@@ -36,6 +36,10 @@ export const toggleVariant = {
       ease: "easeOut",
     },
   },
+  exit: {
+    opacity: 0,
+    y: "-100%",
+  },
 };
 
 // header variant

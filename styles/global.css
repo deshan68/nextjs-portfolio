@@ -39,7 +39,7 @@
   @apply relative z-10 flex justify-center items-center flex-col max-w-full;
 }
 .dropdown {
-  @apply absolute top-full right-0 flex flex-col bg-white h-[90vh] w-full justify-center items-center;
+  @apply fixed top-0 right-0 flex flex-col bg-white h-[100vh] w-full justify-center items-center;
 }
 .title {
   @apply font-leagueSemiBold text-5xl;
