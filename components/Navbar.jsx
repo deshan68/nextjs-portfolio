@@ -3,13 +3,30 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { closeIcon, menuIcon } from "@public/icon";
-import { backOut, motion as m, AnimatePresence } from "framer-motion";
+import {
+  backOut,
+  motion as m,
+  AnimatePresence,
+  useScroll,
+  useSpring,
+} from "framer-motion";
 import { liVariants, toggleVariant, ulVariants } from "@utils/motion";
 
 export const Navbar = () => {
+  const { scrollYProgress } = useScroll();
+
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
   const [toggleDropdown, setToggleDropdown] = useState(false);
   return (
     <nav className="flex justify-between items-center w-full px-10 h-[8vh] font-juraBold relative z-30">
+      <m.div
+        className="h-[2px] fixed left-0 right-0 bottom-3 bg-action_blue"
+        style={{ scaleX }}
+      />
       <m.div
         variants={ulVariants}
         initial={"hidden"}
