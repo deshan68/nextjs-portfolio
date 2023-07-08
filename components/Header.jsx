@@ -20,7 +20,19 @@ import {
 
 export const Header = () => {
   return (
-    <div className="h-[92vh] bg-primary_blue flex justify-center relative items-center">
+    <div className="h-[92vh] bg-primary_blue flex justify-center relative items-center overflow-hidden">
+      {/* 3d ball-1 */}
+      <Balls y={"-100px"} x={"-100px"} height={"350px"} width={"350px"} />
+
+      {/* 3d ball-2 */}
+      <Balls y={"90%"} x={"30%"} height={"100px"} width={"100px"} />
+
+      {/* 3d ball-3*/}
+      <Balls y={"70%"} x={"90%"} height={"230px"} width={"230px"} />
+
+      {/* 3d ball-4 */}
+      <Balls y={"10%"} x={"90%"} height={"120px"} width={"120px"} />
+
       {/* center blue ball */}
       <m.div
         variants={centerCircleVariant}
@@ -113,5 +125,19 @@ export const Header = () => {
         <Image src={cssIcon} height={80} width={80} alt="figma icon" />
       </m.div>
     </div>
+  );
+};
+
+const Balls = ({ x, y, height, width }) => {
+  return (
+    <div
+      style={{
+        top: x,
+        right: y,
+        height: height,
+        width: width,
+      }}
+      className={`absolute bg-gradient-to-r from-ballTheme to-white rounded-full shadow-lg overflow-hidden`}
+    ></div>
   );
 };

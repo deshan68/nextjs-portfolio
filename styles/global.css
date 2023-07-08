@@ -34,6 +34,10 @@
   font-family: "LeagueExtraLight";
   src: url("../public/font/legue-sparta/LeagueSpartan-ExtraLight.ttf");
 }
+@font-face {
+  font-family: "LeagueExtraThin";
+  src: url("../public/font/legue-sparta/LeagueSpartan-Thin.ttf");
+}
 
 .app {
   @apply relative z-10 flex justify-center items-center flex-col max-w-full;
@@ -42,8 +46,8 @@
   @apply fixed top-0 right-0 flex flex-col bg-white h-[100vh] w-full justify-center items-center;
 }
 .title {
-  @apply font-leagueSemiBold text-5xl;
+  @apply font-leagueSemiBold sm:text-5xl text-4xl text-center;
 }
 .paragraph {
-  @apply font-leagueLight text-xl pt-10;
+  @apply font-leagueLight sm:text-xl text-base pt-10;
 }

@@ -18,6 +18,7 @@ module.exports = {
         leagueLight: "LeagueLight",
         leagueSemiBold: "LeagueSemiBold",
         leagueExtraLight: "LeagueExtraLight",
+        leagueExtraThin: "LeagueExtraThin",
       },
       colors: {
         transparent: "transparent",
@@ -26,6 +27,7 @@ module.exports = {
         black: "#111111",
         action_blue: "#2178de",
         primary_blue: "#f2f7fd",
+        ballTheme: "rgba(23, 84, 155, 0.72)",
       },
     },
   },

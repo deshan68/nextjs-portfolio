@@ -137,3 +137,46 @@ export const socialIconVariant = {
     },
   },
 };
+
+// about section variant
+export const sectionVariant = {
+  offscreen: {
+    opacity: 0,
+    y: "20%",
+  },
+  onscreen: {
+    y: "0",
+    opacity: 1,
+    transition: {
+      duration: 1,
+    },
+  },
+};
+
+//gallery variant
+export const parentVariant = {
+  hidden: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      delayChildren: 0,
+      staggerChildren: 0.2,
+    },
+  },
+};
+export const childVariant = {
+  hidden: {
+    opacity: 0,
+    scale: 0,
+  },
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+    },
+  },
+};

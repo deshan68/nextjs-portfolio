@@ -22,31 +22,26 @@ export const Navbar = () => {
   });
   const [toggleDropdown, setToggleDropdown] = useState(false);
   return (
-    <nav className="flex justify-between items-center w-full px-10 h-[8vh] font-juraBold relative z-30">
+    <nav className="flex justify-between items-center w-full px-10 h-[8vh] font-juraBold relative z-50 bg-white overflow-hidden ">
       <m.div
-        className="h-[2px] fixed left-0 right-0 bottom-3 bg-action_blue"
+        className="h-[2px] fixed left-0 right-0 bottom-8 bg-action_blue mx-16"
         style={{ scaleX }}
       />
-      <m.div
-        variants={ulVariants}
-        initial={"hidden"}
-        animate={"show"}
-        className="flex items-center font-bold text-xl"
-      >
-        <m.span variants={liVariants}>d</m.span>
-        <m.span variants={liVariants}>e</m.span>
-        <m.span variants={liVariants}>v</m.span>
-        <m.span variants={liVariants}>e</m.span>
-        <m.span variants={liVariants}>l</m.span>
-        <m.span variants={liVariants}>o</m.span>
-        <m.span variants={liVariants}>p</m.span>
-        <m.span variants={liVariants}>B</m.span>
-        <m.span variants={liVariants}>y</m.span>
-        <m.span variants={liVariants}>A</m.span>
-        <m.span variants={liVariants}>r</m.span>
-        <m.span variants={liVariants}>u</m.span>
-        <m.span variants={liVariants}>n</m.span>
-      </m.div>
+      <div>
+        <span>d</span>
+        <span>e</span>
+        <span>v</span>
+        <span>e</span>
+        <span>l</span>
+        <span>o</span>
+        <span>p</span>
+        <span>B</span>
+        <span>y</span>
+        <span>A</span>
+        <span>r</span>
+        <span>u</span>
+        <span>n</span>
+      </div>
       {!toggleDropdown && (
         <div
           className="sm:hidden bg-action_blue p-2 rounded-full"

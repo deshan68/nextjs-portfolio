@@ -5,7 +5,7 @@ import { motion as m } from "framer-motion";
 
 export const EmailBar = () => {
   return (
-    <div className="bottom-36 right-[-100px] fixed z-10 rotate-90">
+    <div className="bottom-[130px] right-[-100px] fixed z-10 rotate-90">
       <m.div
         initial={{
           rotate: 0,
