@@ -1,5 +1,4 @@
 import { About, Contact, Footer, Gallery, Header, Project } from "@components";
-import { Test } from "./test/page";
 
 const Home = () => {
   return (

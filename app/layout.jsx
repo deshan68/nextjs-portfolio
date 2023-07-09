@@ -1,4 +1,4 @@
-import { EmailBar, Footer, Navbar, SocialMediaBar } from "@components";
+import { EmailBar, Navbar, SocialMediaBar } from "@components";
 import "@styles/global.css";
 
 export const metadata = {

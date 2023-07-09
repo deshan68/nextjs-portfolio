@@ -1,3 +1,4 @@
+"use client";
 import profileImg from "./images/profile.png";
 import topBoxImg from "./images/coding.png";
 import figmaIcon from "./icon/figma.png";
