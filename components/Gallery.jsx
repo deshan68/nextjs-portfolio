@@ -9,18 +9,11 @@ import {
   g6Img,
   g7Img,
   g8Img,
-  g9Img,
 } from "@public";
 import Image from "next/image";
 import React from "react";
 import { motion as m } from "framer-motion";
-import {
-  childVariant,
-  liVariants,
-  parentVariant,
-  sectionVariant,
-  ulVariants,
-} from "@utils/motion";
+import { childVariant, parentVariant } from "@utils/motion";
 export const Gallery = () => {
   return (
     <m.section id="gallery" className="bg-white py-20">

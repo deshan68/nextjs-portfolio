@@ -1,13 +1,13 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { motion as m } from "framer-motion";
 import Image from "next/image";
-import { eyeIcon, githubIcon, githubWhite, projectImg1 } from "@public";
-import { parentVariant, sectionVariant, ulVariants } from "@utils/motion";
-import ContentLoader, { Facebook } from "react-content-loader";
+import { eyeIcon, githubWhite } from "@public";
+import { sectionVariant } from "@utils/motion";
+import ContentLoader from "react-content-loader";
 import { db } from "@firebaseConfig";
 import { useCollection } from "react-firebase-hooks/firestore";
-import { collection, orderBy, query } from "firebase/firestore";
+import { collection, query } from "firebase/firestore";
 
 export const Project = () => {
   const [active, setActive] = useState("All");

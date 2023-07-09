@@ -3,13 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { closeIcon, menuIcon } from "@public/icon";
-import {
-  backOut,
-  motion as m,
-  AnimatePresence,
-  useScroll,
-  useSpring,
-} from "framer-motion";
+import { motion as m, useScroll, useSpring } from "framer-motion";
 import { liVariants, toggleVariant, ulVariants } from "@utils/motion";
 import { Link } from "react-scroll";
 
