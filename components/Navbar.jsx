@@ -47,8 +47,8 @@ export const Navbar = () => {
         >
           <Image
             src={menuIcon}
-            width={30}
-            height={30}
+            width={20}
+            height={20}
             className="object-contain"
           />
         </div>
@@ -84,8 +84,8 @@ export const Navbar = () => {
           >
             <Image
               src={closeIcon}
-              width={30}
-              height={30}
+              width={20}
+              height={20}
               className="object-contain "
             />
           </div>

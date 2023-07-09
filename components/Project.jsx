@@ -9,27 +9,37 @@ import { db } from "@firebaseConfig";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { collection, orderBy, query } from "firebase/firestore";
 
-const details = [
-  {
-    title: "Promtopia AI-Prompt sharing app",
-    des: "Build a beautiful Discover and Share AI-Powered Prompts app",
-    imgUrlL: projectImg1,
-  },
-  {
-    title: "Promtopia AI-Prompt sharing app",
-    des: "Build a beautiful Discover and Share AI-Powered Prompts app",
-    imgUrlL: projectImg1,
-  },
-];
-
 export const Project = () => {
   const [active, setActive] = useState("All");
-  const [projectDetails, setProjectDetails] = useState();
+  const [projectDetails, setProjectDetails] = useState([]);
+  const [searchResult, setSearchResult] = useState([]);
 
   //fetch project details from firebase
   const [projects, loading] = useCollection(query(collection(db, "files")));
-  console.log(loading);
-  projects?.docs.map((item) => console.log(item.data()));
+
+  // const filterProjects = (tagName) => {
+  //   console.log(tagName);
+  //   const regex = new RegExp(tagName, "i");
+  //   return projectDetails.filter((item) =>
+  //     item.categories.map((cat) => {
+  //       return false;
+  //     })
+  //   );
+  // };
+
+  const handleTagClick = (tagName) => {
+    setActive(tagName);
+
+    // const _searchResults = filterProjects("EXPO");
+    // console.log(_searchResults);
+    // setSearchResult(_searchResults);
+  };
+
+  // useEffect(() => {
+  //   projects?.docs.map((item) =>
+  //     setProjectDetails((prev) => [...prev, item.data()])
+  //   );
+  // }, [projects]);
 
   return (
     <m.section id="projects" className="bg-primary_blue py-20 h-fit">
@@ -53,7 +63,7 @@ export const Project = () => {
               className={
                 "font-leagueSemiBold text-base px-3 py-1 rounded-lg shadow-lg cursor-pointer"
               }
-              onClick={() => setActive(item)}
+              onClick={() => handleTagClick(item)}
               initial={{
                 color: item === active ? "#ffff" : "#111",
                 backgroundColor: item === active ? "#2178de" : "#ffff",
@@ -82,10 +92,15 @@ export const Project = () => {
         {/*  -----------------------------projects cards container----------------------------- */}
         {/* <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-5 grid-cols-1 justify-items-center"> */}
         <div className="mt-8 flex flex-wrap justify-center items-center gap-x-10 gap-y-5">
-          {loading && [1, 2].map((item) => <MyLoader key={item} />)}
-          {projects?.docs.map((item, indx) => (
-            <ProjectCard indx={indx} item={item.data()} />
-          ))}
+          {loading === true ? (
+            [1, 2].map((item) => <MyLoader key={item} />)
+          ) : (
+            <>
+              {projects?.docs.map((item, indx) => (
+                <ProjectCard indx={indx} item={item.data()} />
+              ))}
+            </>
+          )}
         </div>
 
         {/*  */}
@@ -114,12 +129,6 @@ const MyLoader = () => (
 
     <rect x="38" y="370" rx="5" ry="5" width="320" height="12" />
     <rect x="38" y="400" rx="5" ry="5" width="320" height="12" />
-    {/* <rect x="32" y="181" rx="5" ry="5" width="214" height="10" />
-    <rect x="42" y="200" rx="5" ry="5" width="192" height="10" />
-    <rect x="30" y="229" rx="5" ry="5" width="104" height="25" />
-    <rect x="145" y="229" rx="5" ry="5" width="104" height="26" />
-    <rect x="28" y="268" rx="5" ry="5" width="222" height="10" />
-    <rect x="55" y="287" rx="5" ry="5" width="164" height="11" /> */}
   </ContentLoader>
 );
 
@@ -133,12 +142,20 @@ const ProjectCard = ({ indx, item }) => {
       <div className="relative flex justify-center items-center group h-[132px] w-[235px] rounded-lg">
         <div className="absolute h-full w-full rounded-lg hover:bg-black/50  duration-500 hidden group-hover:block">
           <div className="h-full w-full flex justify-center items-center gap-5">
-            <div className="h-8 w-8 bg-black/70 rounded-full flex justify-center items-center hover:scale-125 hover:bg-black/95 duration-300 ">
+            <a
+              href={item.repoLink}
+              target="_blank"
+              className="h-8 w-8 bg-black/70 rounded-full flex justify-center items-center hover:scale-125 hover:bg-black/95 duration-300 "
+            >
               <Image src={githubWhite} width={18} height={18} alt="github" />
-            </div>
-            <div className="h-8 w-8  bg-black/70 rounded-full flex justify-center items-center hover:scale-125 hover:bg-black/95 duration-300 ">
+            </a>
+            <a
+              target="_blank"
+              href={item.hostLink}
+              className="h-8 w-8  bg-black/70 rounded-full flex justify-center items-center hover:scale-125 hover:bg-black/95 duration-300 "
+            >
               <Image src={eyeIcon} width={18} height={18} alt="github" />
-            </div>
+            </a>
           </div>
         </div>
         <Image
@@ -152,20 +169,20 @@ const ProjectCard = ({ indx, item }) => {
       </div>
 
       {/* title */}
-      <div className="flex ">
+      <div className="flex pt-1">
         <span className="font-leagueSemiBold text-xl text-center leading-6">
           {item.title}
         </span>
       </div>
 
       {/* categories */}
+
       <div className="font-leagueExtraLight text-[10px] flex flex-row justify-center gap-2 w-full">
-        <span className="h-[19px] w-[50px] bg-primary_blue flex justify-center items-center rounded-sm">
-          EXPO
-        </span>
-        <span className="h-[19px] w-[50px] bg-primary_blue flex justify-center items-center rounded-sm ">
-          MOBILE
-        </span>
+        {item.categories.map((cate) => (
+          <span className="h-[19px] bg-primary_blue flex justify-center items-center rounded-sm text-xs px-2">
+            {cate}
+          </span>
+        ))}
       </div>
 
       {/* description */}
@@ -177,12 +194,20 @@ const ProjectCard = ({ indx, item }) => {
 
       {/* buttons */}
       <div className="flex w-full justify-center items-center gap-3 lg:hidden">
-        <button className="w-full bg-action_blue rounded-md py-[2px] text-white font-leagueLight cursor-pointer shadow-md">
+        <a
+          href={item.repoLink}
+          target="_blank"
+          className="w-full bg-action_blue rounded-md py-[2px] text-white font-leagueLight cursor-pointer shadow-md text-center"
+        >
           Source code
-        </button>
-        <button className="w-full bg-action_blue rounded-md py-[2px] text-white font-leagueLight  cursor-pointer shadow-md">
+        </a>
+        <a
+          target="_blank"
+          href={item.hostLink}
+          className="w-full bg-action_blue rounded-md py-[2px] text-white font-leagueLight  cursor-pointer shadow-md text-center"
+        >
           View
-        </button>
+        </a>
       </div>
 
       {/*  */}

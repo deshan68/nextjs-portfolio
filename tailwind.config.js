@@ -26,7 +26,7 @@ module.exports = {
         white: "#ffffff",
         black: "#111111",
         action_blue: "#2178de",
-        primary_blue: "#f2f7fd",
+        primary_blue: "#EEF6FF",
         ballTheme: "rgba(23, 84, 155, 0.72)",
       },
     },
