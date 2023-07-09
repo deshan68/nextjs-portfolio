@@ -16,6 +16,14 @@ import githubWhite from "./icon/github-white.svg";
 import eyeIcon from "./icon/eye.svg";
 import g1Img from "./images/g1.jpeg";
 import chatIcon from "./icon/chatIcon.svg";
+import g2Img from "./images/g2.jpg";
+import g3Img from "./images/g3.jpg";
+import g4Img from "./images/g4.jpg";
+import g7Img from "./images/g7.jpg";
+import g9Img from "./images/g9.jpg";
+import g10Img from "./images/g10.jpg";
+import g6Img from "./images/g6.jpg";
+import g8Img from "./images/g8.jpg";
 
 export {
   profileImg,
@@ -36,4 +44,12 @@ export {
   eyeIcon,
   g1Img,
   chatIcon,
+  g2Img,
+  g3Img,
+  g4Img,
+  g7Img,
+  g9Img,
+  g10Img,
+  g6Img,
+  g8Img,
 };

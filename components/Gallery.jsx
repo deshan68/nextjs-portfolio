@@ -1,6 +1,16 @@
 "use client";
 
-import { g1Img } from "@public";
+import {
+  g10Img,
+  g1Img,
+  g2Img,
+  g3Img,
+  g4Img,
+  g6Img,
+  g7Img,
+  g8Img,
+  g9Img,
+} from "@public";
 import Image from "next/image";
 import React from "react";
 import { motion as m } from "framer-motion";
@@ -36,77 +46,107 @@ export const Gallery = () => {
               className="flex h-[371px] w-[300px] relative justify-center"
             >
               <Image
-                src={
-                  "https://plus.unsplash.com/premium_photo-1688045722767-8d8672f6950b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-                }
+                src={g8Img}
                 width={300}
                 height={371} //370
                 alt="gallery img1"
                 className="object-cover rounded-lg"
+                loading="lazy"
               />
               <div className="image_label">HackaDEV 2023</div>
             </m.div>
-            <m.div variants={childVariant} className="flex h-[294px] w-[300px]">
+            <m.div
+              variants={childVariant}
+              className="flex h-[294px] w-[300px] relative justify-center"
+            >
               <Image
-                src={g1Img}
+                src={g3Img}
                 width={300}
                 height={294} //290
                 alt="gallery img1"
                 className="object-cover rounded-lg"
+                loading="lazy"
               />
+              <div className="image_label">HackaDEV 2023</div>
+              <div className="image_label">HackaDEV 2023</div>
             </m.div>
           </div>
 
           {/* column 2 */}
           <div className="bg-white flex flex-col justify-between gap-y-5">
-            <m.div variants={childVariant} className="flex h-[215px] w-[300px]">
+            <m.div
+              variants={childVariant}
+              className="flex h-[215px] w-[300px] relative justify-center"
+            >
               <Image
-                src={g1Img}
+                src={g7Img}
                 width={300}
                 height={215} //
                 alt="gallery img1"
                 className="object-cover rounded-lg"
+                loading="lazy"
               />
+              <div className="image_label">HackaDEV 2023</div>
             </m.div>
-            <m.div variants={childVariant} className="flex h-[215px] w-[300px]">
+            <m.div
+              variants={childVariant}
+              className="flex h-[215px] w-[300px] relative justify-center"
+            >
               <Image
-                src={g1Img}
+                src={g2Img}
                 width={300}
                 height={215}
                 alt="gallery img1"
                 className="object-cover rounded-lg"
+                loading="lazy"
               />
+              <div className="image_label">HackaDEV 2023</div>
             </m.div>
-            <m.div variants={childVariant} className="flex h-[215px] w-[300px]">
+            <m.div
+              variants={childVariant}
+              className="flex h-[215px] w-[300px] relative justify-center"
+            >
               <Image
-                src={g1Img}
+                src={g10Img}
                 width={300}
                 height={215}
                 alt="gallery img1"
                 className="object-cover rounded-lg"
+                loading="lazy"
               />
+              <div className="image_label">HackaDEV 2023</div>
             </m.div>
           </div>
 
           {/* column 3 */}
           <div className="flex flex-col gap-y-5 ">
-            <m.div variants={childVariant} className="flex h-[294px] w-[300px]">
+            <m.div
+              variants={childVariant}
+              className="flex h-[294px] w-[300px] relative justify-center"
+            >
               <Image
-                src={g1Img}
+                src={g4Img}
                 width={300}
                 height={309}
                 alt="gallery img1"
                 className="object-cover rounded-lg"
+                loading="lazy"
               />
+              <div className="image_label">HackaDEV 2023</div>
             </m.div>
-            <m.div variants={childVariant} className="flex h-[371px] w-[300px]">
+            <m.div
+              variants={childVariant}
+              className="flex h-[371px] w-[300px] relative justify-center"
+            >
               <Image
-                src={g1Img}
+                src={g6Img}
                 width={300}
                 height={354}
                 alt="gallery img1"
                 className="object-cover rounded-lg"
+                loading="lazy"
               />
+              <div className="image_label">HackaDEV 2023</div>
             </m.div>
           </div>
 
