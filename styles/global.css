@@ -43,11 +43,19 @@
   @apply relative z-10 flex justify-center items-center flex-col max-w-full;
 }
 .dropdown {
-  @apply fixed top-0 right-0 flex flex-col bg-white h-[100vh] w-full justify-center items-center;
+  @apply absolute top-0 right-0 flex flex-col bg-white w-full justify-center items-center z-50;
 }
 .title {
   @apply font-leagueSemiBold sm:text-5xl text-4xl text-center;
 }
 .paragraph {
   @apply font-leagueLight sm:text-xl text-base pt-10;
+}
+
+.image_label {
+  @apply bg-white absolute bottom-0 h-7 w-36 flex justify-center items-center font-leagueLight text-sm rounded-t-md;
+}
+
+.active {
+  @apply text-action_blue duration-300 bg-primary_blue transition ease-linear border-[0.5px] border-action_blue;
 }
