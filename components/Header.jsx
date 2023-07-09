@@ -20,7 +20,10 @@ import {
 
 export const Header = () => {
   return (
-    <div className="h-[92vh] bg-primary_blue flex justify-center relative items-center overflow-hidden">
+    <div
+      id="home"
+      className="h-screen bg-primary_blue flex justify-center relative items-center overflow-hidden"
+    >
       {/* 3d ball-1 */}
       <Balls y={"-100px"} x={"-100px"} height={"350px"} width={"350px"} />
 
@@ -46,7 +49,7 @@ export const Header = () => {
         src={profileImg}
         width={384}
         height={500}
-        className="absolute top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-3/4 object-contain z-10"
+        className="absolute top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-3/4 object-contain z-10 "
       />
 
       {/* top box */}
@@ -54,7 +57,7 @@ export const Header = () => {
         variants={topBoxVariant}
         initial={"hidden"}
         animate={"show"}
-        className="absolute left-[8%] top-[8%] bg-white flex h-[140px] w-[345px] justify-center items-center gap-4 rounded-lg shadow-xl"
+        className="absolute left-[10%] top-[12%] bg-white flex h-[140px] w-[345px] justify-center items-center gap-4 rounded-lg shadow-xl"
       >
         <Image
           src={topBoxImg}
@@ -71,6 +74,7 @@ export const Header = () => {
 
       {/* bottom box */}
       <m.div
+        id="home"
         variants={bottomBoxVariant}
         initial={"hidden"}
         animate={"show"}
@@ -93,7 +97,7 @@ export const Header = () => {
         variants={floatingIconVariant}
         initial={"hidden"}
         animate={"show"}
-        className="lg:h-28 lg:w-28 h-16 w-16 bg-white absolute  lg:top-[10%] lg:right-[30%] top-[30%] right-[18%] rounded-full shadow-lg flex justify-center items-center p-3"
+        className="lg:h-28 lg:w-28 h-16 w-16 bg-white absolute  lg:top-[12%] lg:right-[30%] top-[32%] right-[18%] rounded-full shadow-lg flex justify-center items-center p-3"
       >
         <Image src={figmaIcon} height={80} width={80} alt="figma icon" />
       </m.div>

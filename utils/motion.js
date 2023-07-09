@@ -149,6 +149,7 @@ export const sectionVariant = {
     opacity: 1,
     transition: {
       duration: 1,
+      delay: 0.5,
     },
   },
 };
@@ -161,8 +162,8 @@ export const parentVariant = {
   show: {
     opacity: 1,
     transition: {
-      delayChildren: 0,
-      staggerChildren: 0.2,
+      delayChildren: 0.3,
+      staggerChildren: 0.4,
     },
   },
 };
@@ -177,6 +178,7 @@ export const childVariant = {
     transition: {
       type: "spring",
       bounce: 0.4,
+      duration: "2",
     },
   },
 };

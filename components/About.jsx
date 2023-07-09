@@ -7,14 +7,14 @@ import { sectionVariant } from "@utils/motion";
 
 export const About = () => {
   return (
-    <m.section
-      initial="offscreen"
-      whileInView="onscreen"
-      viewport={{ once: true, amount: "some" }}
-      variants={sectionVariant}
-      className="bg-white py-20"
-    >
-      <m.div className="flex h-fit justify-center items-center flex-col max-w-6xl mx-auto sm:px-16 px-5 mb-7">
+    <m.section id="about" className="bg-white py-20">
+      <m.div
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: "some" }}
+        variants={sectionVariant}
+        className="flex h-fit justify-center items-center flex-col max-w-6xl mx-auto sm:px-16 px-5 mb-7  pt-10"
+      >
         {/* title */}
         <span className="title">
           A Little Bit

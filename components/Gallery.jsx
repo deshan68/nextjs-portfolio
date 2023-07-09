@@ -13,14 +13,14 @@ import {
 } from "@utils/motion";
 export const Gallery = () => {
   return (
-    <m.section
-      className="bg-white py-20"
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: "some" }}
-      variants={parentVariant}
-    >
-      <m.div className="flex h-fit justify-center items-center flex-col max-w-6xl mx-auto sm:px-16 px-5 mb-7">
+    <m.section id="gallery" className="bg-white py-20">
+      <m.div
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: "some" }}
+        variants={parentVariant}
+        className="flex h-fit justify-center items-center flex-col max-w-6xl mx-auto sm:px-16 px-5 mb-7 pt-10"
+      >
         {/* title */}
         <span className="title">
           My

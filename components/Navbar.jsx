@@ -11,6 +11,7 @@ import {
   useSpring,
 } from "framer-motion";
 import { liVariants, toggleVariant, ulVariants } from "@utils/motion";
+import { Link } from "react-scroll";
 
 export const Navbar = () => {
   const { scrollYProgress } = useScroll();
@@ -22,26 +23,23 @@ export const Navbar = () => {
   });
   const [toggleDropdown, setToggleDropdown] = useState(false);
   return (
-    <nav className="flex justify-between items-center w-full px-10 h-[8vh] font-juraBold relative z-50 bg-white overflow-hidden ">
+    <nav className="fixed justify-between items-center w-full px-10 h-20 font-juraBold flex z-50 bg-white overflow-hidden ">
       <m.div
         className="h-[2px] fixed left-0 right-0 bottom-8 bg-action_blue mx-16"
         style={{ scaleX }}
       />
-      <div>
-        <span>d</span>
-        <span>e</span>
-        <span>v</span>
-        <span>e</span>
-        <span>l</span>
-        <span>o</span>
-        <span>p</span>
-        <span>B</span>
-        <span>y</span>
-        <span>A</span>
-        <span>r</span>
-        <span>u</span>
-        <span>n</span>
-      </div>
+
+      <Link
+        activeClass="active"
+        to="home"
+        smooth={true}
+        offset={5}
+        duration={500}
+        className="cursor-pointer"
+      >
+        <span>developByArun</span>
+      </Link>
+
       {!toggleDropdown && (
         <div
           className="sm:hidden bg-action_blue p-2 rounded-full"
@@ -59,11 +57,51 @@ export const Navbar = () => {
       {/* desktop navigation */}
       <div className="items-center sm:flex hidden">
         <ul className="list-none flex items-center gap-5 font-bold text-sm cursor-pointer">
-          <li>HOME</li>
-          <li>ABOUT</li>
-          <li>ABOUT</li>
-          <li>GALLERY</li>
-          <li>CONTACT</li>
+          <Link
+            activeClass="active"
+            to="home"
+            smooth={true}
+            offset={5}
+            duration={500}
+          >
+            <li>HOME</li>
+          </Link>
+          <Link
+            activeClass="active"
+            to="about"
+            smooth={true}
+            offset={5}
+            duration={500}
+          >
+            <li>ABOUT</li>
+          </Link>
+          <Link
+            activeClass="active"
+            to="project"
+            smooth={true}
+            offset={5}
+            duration={500}
+          >
+            <li>PROJECTS</li>
+          </Link>
+          <Link
+            activeClass="gallery"
+            to="gallery"
+            smooth={true}
+            offset={5}
+            duration={500}
+          >
+            <li>GALLERY</li>
+          </Link>
+          <Link
+            activeClass="contact"
+            to="contact"
+            smooth={true}
+            offset={5}
+            duration={500}
+          >
+            <li>CONTACT</li>
+          </Link>
         </ul>
         <button className="ml-5 font-bold text-sm cursor-pointer text-action_blue border-action_blue border-2 p-2 rounded-md">
           RESUME
@@ -99,11 +137,56 @@ export const Navbar = () => {
             animate={"show"}
             className="list-none items-center flex flex-col gap-10 font-bold text-sm cursor-pointer"
           >
-            <m.div variants={liVariants}>HOME</m.div>
-            <m.div variants={liVariants}>ABOUT</m.div>
-            <m.div variants={liVariants}>ABOUT</m.div>
-            <m.div variants={liVariants}>GALLERY</m.div>
-            <m.div variants={liVariants}>CONTACT</m.div>
+            <Link
+              activeClass="active"
+              to="home"
+              smooth={true}
+              offset={5}
+              duration={500}
+              onClick={() => setToggleDropdown((pre) => !pre)}
+            >
+              <li>HOME</li>
+            </Link>
+            <Link
+              activeClass="active"
+              to="about"
+              smooth={true}
+              offset={5}
+              duration={500}
+              onClick={() => setToggleDropdown((pre) => !pre)}
+            >
+              <li>ABOUT</li>
+            </Link>
+            <Link
+              activeClass="active"
+              to="project"
+              smooth={true}
+              offset={5}
+              duration={500}
+              onClick={() => setToggleDropdown((pre) => !pre)}
+            >
+              <li>PROJECTS</li>
+            </Link>
+            <Link
+              activeClass="active"
+              to="gallery"
+              smooth={true}
+              offset={5}
+              duration={500}
+              onClick={() => setToggleDropdown((pre) => !pre)}
+            >
+              <li>GALLERY</li>
+            </Link>
+            <Link
+              activeClass="active"
+              to="contact"
+              smooth={true}
+              offset={5}
+              duration={500}
+              onClick={() => setToggleDropdown((pre) => !pre)}
+            >
+              <li>CONTACT</li>
+            </Link>
             <m.button
               variants={liVariants}
               className="font-bold text-sm cursor-pointer text-action_blue border-action_blue border-2 p-2 rounded-md"
