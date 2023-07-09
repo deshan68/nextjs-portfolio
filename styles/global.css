@@ -51,7 +51,3 @@
 .paragraph {
   @apply font-leagueLight sm:text-xl text-base pt-10;
 }
-
-.active {
-  @apply text-red-500;
-}

@@ -15,13 +15,13 @@ import { Link } from "react-scroll";
 
 export const Navbar = () => {
   const { scrollYProgress } = useScroll();
-
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
     restDelta: 0.001,
   });
   const [toggleDropdown, setToggleDropdown] = useState(false);
+
   return (
     <nav className="fixed justify-between items-center w-full px-10 h-20 font-juraBold flex z-50 bg-white overflow-hidden ">
       <m.div

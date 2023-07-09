@@ -58,8 +58,11 @@ export const Project = () => {
         {/*  -----------------------------projects cards container----------------------------- */}
         {/* <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-5 grid-cols-1 justify-items-center"> */}
         <div className="mt-8 flex flex-wrap justify-center items-center gap-x-10 gap-y-5">
-          {[1, 2, 3, 3, 5].map((card) => (
-            <div className=" h-[330px] w-[275px] bg-white flex flex-col justify-around items-center p-5 rounded-lg cursor-pointer hover:shadow-lg hover:scale-105 duration-300">
+          {[1, 2, 3, 3, 5].map((card, indx) => (
+            <div
+              key={indx}
+              className="h-[330px] w-[275px] bg-white flex flex-col justify-around items-center p-5 rounded-lg cursor-pointer hover:shadow-lg hover:scale-105 duration-300"
+            >
               {/*image  */}
               <div className="relative flex justify-center items-center group h-[132px] w-[235px] rounded-lg">
                 <div className="absolute h-full w-full rounded-lg hover:bg-black/50  duration-500 hidden group-hover:block">
@@ -113,6 +116,16 @@ export const Project = () => {
                 <span className="font-leagueExtraLight text-base text-center">
                   Build a beautiful Discover and Share AI-Powered Prompts app
                 </span>
+              </div>
+
+              {/* buttons */}
+              <div className="flex w-full justify-center items-center gap-3 lg:hidden">
+                <button className="w-full bg-action_blue rounded-md py-[2px] text-white font-leagueLight cursor-pointer shadow-md">
+                  Source code
+                </button>
+                <button className="w-full bg-action_blue rounded-md py-[2px] text-white font-leagueLight  cursor-pointer shadow-md">
+                  View
+                </button>
               </div>
 
               {/*  */}
