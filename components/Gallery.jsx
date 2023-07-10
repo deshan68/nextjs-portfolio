@@ -40,7 +40,7 @@ export const Gallery = () => {
             >
               <Image
                 src={g8Img}
-                width={300}
+                width={500}
                 height={500} //370
                 alt="gallery img1"
                 className="object-cover rounded-lg"
