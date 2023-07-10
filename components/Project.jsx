@@ -55,7 +55,7 @@ export const Project = () => {
         </span>
 
         {/* category buttons => react js, mobile app, web app, all */}
-        <div className="flex justify-center items-center gap-7 mt-8">
+        {/* <div className="flex justify-center items-center gap-7 mt-8">
           {["Mobile App", "Web App", "All"].map((item, index) => (
             <m.div
               key={index}
@@ -86,7 +86,7 @@ export const Project = () => {
               {item}
             </m.div>
           ))}
-        </div>
+        </div> */}
 
         {/*  -----------------------------projects cards container----------------------------- */}
         {/* <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-5 grid-cols-1 justify-items-center"> */}
