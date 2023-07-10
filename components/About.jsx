@@ -42,39 +42,37 @@ export const About = () => {
         {/* card container */}
         <div className="pt-10 flex gap-20 sm:flex-row flex-col">
           {aboutDetails.map((item, indx) => (
-            <AnimatePresence initial={false}>
-              <m.div
-                whileHover={{
-                  scale: 1.1,
-                  transition: {
-                    duration: 0.3,
-                    type: "tween",
-                  },
-                }}
-                exit={{
-                  scale: 1,
-                }}
-                key={indx}
-                className="h-[400px] w-[274px] bg-primary_blue rounded-lg flex flex-col justify-around items-center p-5"
-              >
-                <div className="h-full flex flex-col justify-around">
-                  <Image
-                    src={item.imgUrl}
-                    width={250}
-                    height={231}
-                    alt={item.title}
-                    className="object-contain rounded-lg"
-                  />
+            <m.div
+              whileHover={{
+                scale: 1.1,
+                transition: {
+                  duration: 0.3,
+                  type: "tween",
+                },
+              }}
+              exit={{
+                scale: 1,
+              }}
+              key={indx}
+              className="h-[400px] w-[274px] bg-primary_blue rounded-lg flex flex-col justify-around items-center p-5"
+            >
+              <div className="h-full flex flex-col justify-around">
+                <Image
+                  src={item.imgUrl}
+                  width={250}
+                  height={231}
+                  alt={item.title}
+                  className="object-contain rounded-lg"
+                />
 
-                  <span className="font-leagueSemiBold text-xl text-center">
-                    {item.title}
-                  </span>
-                  <span className="font-leagueExtraLight text-base text-center">
-                    {item.des}
-                  </span>
-                </div>
-              </m.div>
-            </AnimatePresence>
+                <span className="font-leagueSemiBold text-xl text-center">
+                  {item.title}
+                </span>
+                <span className="font-leagueExtraLight text-base text-center">
+                  {item.des}
+                </span>
+              </div>
+            </m.div>
           ))}
         </div>
       </m.div>

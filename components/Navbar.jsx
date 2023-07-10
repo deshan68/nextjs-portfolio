@@ -52,7 +52,7 @@ export const Navbar = () => {
       <div className="items-center sm:flex hidden">
         <ul className="list-none flex items-center gap-5 font-bold text-sm cursor-pointer">
           {["HOME", "ABOUT", "PROJECTS", "GALLERY", "CONTACT"].map((item) => (
-            <NavBarItem item={item} />
+            <NavBarItem item={item} key={item} />
           ))}
         </ul>
         <button className="ml-5 font-bold text-sm cursor-pointer text-action_blue border-action_blue border-2 p-2 rounded-md">

@@ -16,7 +16,6 @@ export const Project = () => {
 
   //fetch project details from firebase
   const [projects, loading] = useCollection(query(collection(db, "files")));
-
   // const filterProjects = (tagName) => {
   //   console.log(tagName);
   //   const regex = new RegExp(tagName, "i");
@@ -42,7 +41,7 @@ export const Project = () => {
   // }, [projects]);
 
   return (
-    <m.section id="projects" className="bg-primary_blue py-20 h-fit">
+    <m.section id="projects" className="bg-primary_blue py-20 h-fit min-h-fit">
       <m.div
         initial="offscreen"
         whileInView="onscreen"
@@ -97,7 +96,7 @@ export const Project = () => {
           ) : (
             <>
               {projects?.docs.map((item, indx) => (
-                <ProjectCard indx={indx} item={item.data()} />
+                <ProjectCard item={item.data()} key={indx} />
               ))}
             </>
           )}
@@ -132,12 +131,9 @@ const MyLoader = () => (
   </ContentLoader>
 );
 
-const ProjectCard = ({ indx, item }) => {
+const ProjectCard = ({ item }) => {
   return (
-    <div
-      key={indx}
-      className="h-[330px] w-[275px] bg-white flex flex-col justify-around items-center p-5 rounded-lg cursor-pointer hover:shadow-lg hover:scale-105 duration-300"
-    >
+    <div className="h-[330px] w-[275px] bg-white flex flex-col justify-around items-center p-5 rounded-lg cursor-pointer hover:shadow-lg hover:scale-105 duration-300">
       {/*image  */}
       <div className="relative flex justify-center items-center group h-[132px] w-[235px] rounded-lg">
         <div className="absolute h-full w-full rounded-lg hover:bg-black/50  duration-500 hidden group-hover:block">
