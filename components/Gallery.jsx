@@ -41,7 +41,7 @@ export const Gallery = () => {
               <Image
                 src={g8Img}
                 width={300}
-                height={371} //370
+                height={500} //370
                 alt="gallery img1"
                 className="object-cover rounded-lg"
                 loading="lazy"
