@@ -13,7 +13,7 @@ export const About = () => {
         whileInView="onscreen"
         viewport={{ once: true, amount: "some" }}
         variants={sectionVariant}
-        className="flex h-fit justify-center items-center flex-col max-w-6xl mx-auto sm:px-16 px-5 mb-7  pt-10"
+        className="flex h-fit justify-center items-center flex-col max-w-6xl mx-auto sm:px-16 px-6 mb-7 pt-10"
       >
         {/* title */}
         <span className="title">

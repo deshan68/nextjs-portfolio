@@ -1,4 +1,3 @@
-"use client";
 import { about1Img, about2Img } from "@public";
 
 export const aboutDetails = [
