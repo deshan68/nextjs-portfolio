@@ -50,7 +50,7 @@ export const Gallery = () => {
             </m.div>
             <m.div
               variants={childVariant}
-              className="flex h-[294px] w-[300px] relative justify-center"
+              className="flex sm:h-[294px] w-[300px] h-auto relative justify-center"
             >
               <Image
                 src={g3Img}
@@ -69,7 +69,7 @@ export const Gallery = () => {
           <div className="bg-white flex flex-col justify-between gap-y-5">
             <m.div
               variants={childVariant}
-              className="flex h-[215px] w-[300px] relative justify-center"
+              className="flex sm:h-[215px] h-auto w-[300px] relative justify-center"
             >
               <Image
                 src={g7Img}
@@ -83,7 +83,7 @@ export const Gallery = () => {
             </m.div>
             <m.div
               variants={childVariant}
-              className="flex h-[215px] w-[300px] relative justify-center"
+              className="flex sm:h-[215px] h-auto w-[300px] relative justify-center"
             >
               <Image
                 src={g2Img}
@@ -97,7 +97,7 @@ export const Gallery = () => {
             </m.div>
             <m.div
               variants={childVariant}
-              className="flex h-[215px] w-[300px] relative justify-center"
+              className="flex sm:h-[215px] w-[300px] relative justify-center h-auto"
             >
               <Image
                 src={g10Img}
@@ -115,7 +115,7 @@ export const Gallery = () => {
           <div className="flex flex-col gap-y-5 ">
             <m.div
               variants={childVariant}
-              className="flex h-[294px] w-[300px] relative justify-center"
+              className="flex smh-[294px] h-auto w-[300px] relative justify-center"
             >
               <Image
                 src={g4Img}
@@ -129,7 +129,7 @@ export const Gallery = () => {
             </m.div>
             <m.div
               variants={childVariant}
-              className="flex h-[371px] w-[300px] relative justify-center"
+              className="flex sm:h-[371px] h-auto w-[300px] relative justify-center"
             >
               <Image
                 src={g6Img}
