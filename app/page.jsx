@@ -10,7 +10,7 @@ const Home = () => {
       {/* projects */}
       <Project />
       {/* gallery */}
-      {/* <Gallery /> */}
+      <Gallery />
       {/* Contact */}
       <Contact />
       {/* footer */}

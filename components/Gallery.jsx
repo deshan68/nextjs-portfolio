@@ -36,12 +36,12 @@ export const Gallery = () => {
           <div className="flex  flex-col gap-y-5">
             <m.div
               variants={childVariant}
-              className="flex h-[371px] w-[300px] relative justify-center"
+              className="flex sm:h-[371px] h-auto w-[300px] relative justify-center"
             >
               <Image
                 src={g8Img}
-                width={500}
-                height={500} //370
+                width={300}
+                height={200} //370
                 alt="gallery img1"
                 className="object-cover rounded-lg"
                 loading="lazy"
