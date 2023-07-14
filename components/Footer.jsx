@@ -15,7 +15,7 @@ export const Footer = () => {
         </span>
         {/* line 3 */}
         <span className="font-leagueLight sm:text-lg text-center text-xs">
-          Last Updated on: 07-Jun-2023
+          Last Updated on: 14-Jun-2023
         </span>
       </div>
     </section>
