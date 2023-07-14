@@ -5,7 +5,7 @@ import { motion as m } from "framer-motion";
 
 export const EmailBar = () => {
   return (
-    <div className="bottom-[130px] right-[-100px] fixed z-10 rotate-90">
+    <div className="bottom-[100px] right-[-80px] fixed z-10 rotate-90">
       <m.div
         initial={{
           rotate: 0,
@@ -23,7 +23,7 @@ export const EmailBar = () => {
             delay: 1,
           },
         }}
-        className="flex justify-center items-center gap-2 font-leagueExtraLight text-xl"
+        className="flex justify-center items-center gap-2 font-leagueExtraThin text-sm"
       >
         <span>arundeshan@gmail.com</span>
         <div className="bg-black w-14 h-[1px]" />

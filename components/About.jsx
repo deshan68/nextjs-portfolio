@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import { aboutDetails } from "@constants";
-import { AnimatePresence, motion as m } from "framer-motion";
+import { motion as m } from "framer-motion";
 import { sectionVariant } from "@utils/motion";
 
 export const About = () => {
