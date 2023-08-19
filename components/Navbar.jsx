@@ -6,6 +6,7 @@ import { closeIcon, menuIcon } from "@public/icon";
 import { motion as m, useScroll, useSpring } from "framer-motion";
 import { liVariants, toggleVariant, ulVariants } from "@utils/motion";
 import { Link } from "react-scroll";
+import PDFDownloadButton from "./PDFDownloadButton";
 
 export const Navbar = () => {
   const { scrollYProgress } = useScroll();
@@ -55,9 +56,9 @@ export const Navbar = () => {
             <NavBarItem item={item} key={item} />
           ))}
         </ul>
-        <button className="ml-5 font-bold text-sm cursor-pointer text-action_blue border-action_blue border-2 p-2 rounded-md">
-          RESUME
-        </button>
+        <div className="ml-5 font-bold text-sm cursor-pointer text-action_blue border-action_blue border-2 p-2 rounded-md">
+          <PDFDownloadButton />
+        </div>
       </div>
 
       {/* mobile navigation */}
@@ -92,12 +93,12 @@ export const Navbar = () => {
             {["HOME", "ABOUT", "PROJECTS", "GALLERY", "CONTACT"].map((item) => (
               <NavBarItem item={item} setToggleDropdown={setToggleDropdown} />
             ))}
-            <m.button
+            <m.div
               variants={liVariants}
               className="font-bold text-sm cursor-pointer text-action_blue border-action_blue border-2 p-2 rounded-md"
             >
-              RESUME
-            </m.button>
+              <PDFDownloadButton />
+            </m.div>
           </m.div>
         </m.div>
       )}
