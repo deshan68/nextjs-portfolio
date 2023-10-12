@@ -7,6 +7,7 @@ import { Gallery } from "./Gallery";
 import { Project } from "./Project";
 import { SocialMediaBar } from "./SocialMediaBar";
 import { EmailBar } from "./EmailBar";
+import { Loader1 } from "./Loader1";
 
 export {
   Navbar,

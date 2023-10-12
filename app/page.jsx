@@ -1,5 +1,10 @@
 import { About, Contact, Footer, Gallery, Header, Project } from "@components";
 
+export const metadata = {
+  title: "developByArun",
+  description: "My personal Portfolio",
+};
+
 const Home = () => {
   return (
     <section className="w-full flex-center flex-col">

@@ -1,24 +1,31 @@
+"use client";
 import { EmailBar, Navbar, SocialMediaBar } from "@components";
+import Loader1 from "@components/Loader1";
 import "@styles/global.css";
-
-export const metadata = {
-  title: "developByArun",
-  description: "My personal Portfolio",
-};
+import { useEffect, useState } from "react";
 
 const RootLayout = ({ children }) => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 3000);
+  }, []);
+
   return (
     <html lang="en">
       <body>
-        <main className="relative">
-          <Navbar />
-          {children}
-          {/* <Footer /> */}
+        {loading ? (
+          <Loader1 />
+        ) : (
+          <main className="relative">
+            <Navbar />
+            {children}
 
-          {/* social media icons and email  */}
-          <SocialMediaBar />
-          <EmailBar />
-        </main>
+            {/* social media icons and email  */}
+            <SocialMediaBar />
+            <EmailBar />
+          </main>
+        )}
       </body>
     </html>
   );
