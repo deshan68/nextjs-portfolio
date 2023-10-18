@@ -3,6 +3,7 @@ import topBoxImg from "./images/coding.png";
 import figmaIcon from "./icon/figma.png";
 import nodeIcon from "./icon/node.png";
 import cssIcon from "./icon/css.png";
+import reactIcon from "./icon/react.png";
 import reduxIcon from "./icon/redux.png";
 import instaIcon from "./icon/instagram.svg";
 import linkedinIcon from "./icon/linkedin.svg";
@@ -33,6 +34,7 @@ export {
   reduxIcon,
   cssIcon,
   instaIcon,
+  reactIcon,
   linkedinIcon,
   githubIcon,
   about1Img,

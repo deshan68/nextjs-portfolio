@@ -7,6 +7,7 @@ import {
   profileImg,
   reduxIcon,
   topBoxImg,
+  reactIcon,
 } from "@public";
 import Image from "next/image";
 import React from "react";
@@ -127,6 +128,16 @@ export const Header = () => {
         className="lg:h-28 lg:w-28 h-16 w-16 bg-white absolute lg:top-[40%] lg:left-[28%] top-[35%] left-[10%] rounded-full shadow-lg flex justify-center items-center p-3"
       >
         <Image src={cssIcon} height={80} width={80} alt="figma icon" />
+      </m.div>
+
+      {/* floating icon top-left */}
+      <m.div
+        variants={floatingIconVariant}
+        initial={"hidden"}
+        animate={"show"}
+        className="lg:h-28 lg:w-28 h-16 w-16 bg-white absolute lg:top-[40%] lg:left-[70%] top-[43%] left-[79%] rounded-full shadow-lg flex justify-center items-center p-3"
+      >
+        <Image src={reactIcon} height={80} width={80} alt="figma icon" />
       </m.div>
     </div>
   );
