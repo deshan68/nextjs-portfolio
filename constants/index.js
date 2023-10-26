@@ -12,3 +12,6 @@ export const aboutDetails = [
     des: "Collaborating with Design Teams and getting the creative juices flowing to generate compelling and functional Apps & Websites.",
   },
 ];
+
+export const resume_url =
+  "https://drive.google.com/file/d/1GbPLAW99ql6o-7IuuT8i-wJVZBhWn_YD/view?usp=drive_link";

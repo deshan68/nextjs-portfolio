@@ -1,7 +1,7 @@
 import { About, Contact, Footer, Gallery, Header, Project } from "@components";
 
 export const metadata = {
-  title: "developByArun",
+  title: "Arun Deshan",
   description: "My personal Portfolio",
 };
 
