@@ -42,7 +42,7 @@ export const Header = () => {
         variants={centerCircleVariant}
         initial={"hidden"}
         animate={"show"}
-        className="h-[335px] w-[325px] bg-action_blue rounded-full"
+        className="h-[335px] w-[325px] bg-[#1B58A2] rounded-full"
       />
 
       {/* profile image */}

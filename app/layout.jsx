@@ -8,14 +8,11 @@ const RootLayout = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 3000);
+    setTimeout(() => setLoading(false), 2000);
   }, []);
 
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-      </head>
       <body>
         {loading ? (
           <Loader1 />
