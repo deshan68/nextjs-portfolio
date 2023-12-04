@@ -46,7 +46,10 @@ export const SocialMediaBar = () => {
             />
           </m.div>
         </a>
-        <a href="https://www.instagram.com/deshan_68/" target="_blank">
+        <a
+          href="https://www.instagram.com/arundesh_68/?utm_source=qr"
+          target="_blank"
+        >
           <m.div
             variants={socialIconVariant}
             className="h-8 w-8 bg-white flex justify-center items-center rounded-full shadow-md cursor-pointer"
