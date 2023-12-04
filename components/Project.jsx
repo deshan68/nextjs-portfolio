@@ -50,7 +50,7 @@ export const Project = () => {
 
   return (
     <m.section id="projects" className="bg-primary_blue py-20 h-fit min-h-fit">
-      <m.div
+      <div
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true, amount: "some" }}
@@ -110,7 +110,7 @@ export const Project = () => {
         </div>
 
         {/*  */}
-      </m.div>
+      </div>
     </m.section>
   );
 };
