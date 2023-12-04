@@ -8,6 +8,7 @@ import {
   reduxIcon,
   topBoxImg,
   reactIcon,
+  dp2,
 } from "@public";
 import Image from "next/image";
 import React from "react";
@@ -38,20 +39,22 @@ export const Header = () => {
       <Balls y={"10%"} x={"90%"} height={"120px"} width={"120px"} />
 
       {/* center blue ball */}
-      <m.div
+      {/* <m.div
         variants={centerCircleVariant}
         initial={"hidden"}
         animate={"show"}
         className="h-[335px] w-[325px] bg-[#1B58A2] rounded-full"
-      />
+      /> */}
 
       {/* profile image */}
-      <Image
-        src={profileImg}
-        width={384}
-        height={500}
-        className="absolute top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-3/4 object-contain z-10 "
-      />
+      <div className="absolute top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-3/4 flex lg:w-[370px] lg:h-[370px] w-72 h-72 justify-center items-center rounded-3xl object-cover overflow-hidden border-[4px] border-[#1B58A2]">
+        <Image
+          src={dp2}
+          width={384}
+          height={500}
+          className="object-cover z-10"
+        />
+      </div>
 
       {/* top box */}
       <m.div

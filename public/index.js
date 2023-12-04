@@ -1,4 +1,5 @@
 import profileImg from "./images/profile.png";
+import dp2 from "./images/dp2.jpg";
 import topBoxImg from "./images/coding.png";
 import figmaIcon from "./icon/figma.png";
 import nodeIcon from "./icon/node.png";
@@ -28,6 +29,7 @@ import g8Img from "./images/g8.jpg";
 
 export {
   profileImg,
+  dp2,
   topBoxImg,
   figmaIcon,
   nodeIcon,
