@@ -51,7 +51,7 @@ export const Navbar = () => {
 
       {/* desktop navigation */}
       <div className="items-center sm:flex hidden">
-        <ul className="list-none flex items-center gap-5 font-bold text-sm cursor-pointer">
+        <ul className="list-none flex items-center gap-5 text-sm cursor-pointer">
           {["HOME", "ABOUT", "PROJECTS", "GALLERY", "CONTACT"].map((item) => (
             <NavBarItem item={item} key={item} />
           ))}
@@ -88,14 +88,14 @@ export const Navbar = () => {
             variants={ulVariants}
             initial={"hidden"}
             animate={"show"}
-            className="list-none items-center flex flex-col gap-10 font-bold text-sm cursor-pointer"
+            className="list-none items-center flex flex-col gap-10 text-sm cursor-pointer"
           >
             {["HOME", "ABOUT", "PROJECTS", "GALLERY", "CONTACT"].map((item) => (
               <NavBarItem item={item} setToggleDropdown={setToggleDropdown} />
             ))}
             <m.div
               variants={liVariants}
-              className="font-bold text-sm cursor-pointer text-action_blue border-action_blue border-2 p-2 rounded-md"
+              className="text-sm cursor-pointer text-action_blue border-action_blue border-2 p-2 rounded-md"
             >
               <PDFDownloadButton />
             </m.div>
