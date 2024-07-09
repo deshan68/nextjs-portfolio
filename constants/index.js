@@ -14,4 +14,4 @@ export const aboutDetails = [
 ];
 
 export const resume_url =
-  "https://drive.google.com/file/d/1OaxCjF6Y0rm_uemonrWrs-2gBWqKY-Vn/view";
+  "https://drive.google.com/file/d/1WXHdrh4Eb88WR_aNQH5MjP_YUDrJ7103/view?usp=sharing";
