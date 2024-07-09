@@ -12,7 +12,11 @@ const PDFDownloadButton = () => {
     document.body.removeChild(link);
   };
 
-  return <button onClick={downloadPDF}>RESUME</button>;
+  return (
+    <button onClick={downloadPDF} className="font-thin">
+      RESUME
+    </button>
+  );
 };
 
 export default PDFDownloadButton;
