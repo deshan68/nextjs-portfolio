@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FaGithub, FaRegEye } from "react-icons/fa";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -14,8 +15,24 @@ const ProjectCard = ({ project }) => {
         />
       </div>
       <div className="w-4/5">
-        <span className="text-white font-bold flex items-center">
+        <span className="text-white font-bold flex items-center gap-x-3">
           {project.title}
+          {project.repoLink.length > 0 && (
+            <a href={project.repoLink} target="_blank">
+              <FaGithub
+                size={18}
+                className="cursor-pointer text-gray-400 hover:text-white transition duration-300"
+              />
+            </a>
+          )}
+          {project.hostLink.length > 0 && (
+            <a href={project.hostLink} target="_blank">
+              <FaRegEye
+                className="cursor-pointer text-gray-400 hover:text-white transition duration-300"
+                size={18}
+              />
+            </a>
+          )}
         </span>
         <p className="text-gray-400 mt-2 leading-tight">
           {project.description}
