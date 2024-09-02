@@ -26,6 +26,8 @@ import g9Img from "./images/g9.JPG";
 import g10Img from "./images/g10.JPG";
 import g6Img from "./images/g6.jpg";
 import g8Img from "./images/g8.jpg";
+import blog_1 from "./images/blog_1.png";
+import blog_2 from "./images/blog_2.png";
 
 export {
   profileImg,
@@ -56,4 +58,6 @@ export {
   g10Img,
   g6Img,
   g8Img,
+  blog_1,
+  blog_2
 };

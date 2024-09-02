@@ -1,4 +1,5 @@
 import { About, Contact, Footer, Gallery, Header, Project } from "@components";
+import Landing from "@components/Landing";
 
 export const metadata = {
   title: "Arun Deshan",
@@ -8,18 +9,19 @@ export const metadata = {
 const Home = () => {
   return (
     <section className="w-full flex-center flex-col">
+      <Landing />
       {/* Header */}
-      <Header />
+      {/* <Header /> */}
       {/* about */}
-      <About />
+      {/* <About /> */}
       {/* projects */}
-      <Project />
+      {/* <Project /> */}
       {/* gallery */}
-      <Gallery />
+      {/* <Gallery /> */}
       {/* Contact */}
-      <Contact />
+      {/* <Contact /> */}
       {/* footer */}
-      <Footer />
+      {/* <Footer /> */}
     </section>
   );
 };

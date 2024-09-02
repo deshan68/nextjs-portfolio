@@ -15,7 +15,6 @@ import React from "react";
 import { motion as m } from "framer-motion";
 import {
   bottomBoxVariant,
-  centerCircleVariant,
   floatingIconVariant,
   topBoxVariant,
 } from "@utils/motion";
@@ -37,14 +36,6 @@ export const Header = () => {
 
       {/* 3d ball-4 */}
       <Balls y={"10%"} x={"90%"} height={"120px"} width={"120px"} />
-
-      {/* center blue ball */}
-      {/* <m.div
-        variants={centerCircleVariant}
-        initial={"hidden"}
-        animate={"show"}
-        className="h-[335px] w-[325px] bg-[#1B58A2] rounded-full"
-      /> */}
 
       {/* profile image */}
       <div className="absolute top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-3/4 flex lg:w-[370px] lg:h-[370px] w-72 h-72 justify-center items-center rounded-3xl object-cover overflow-hidden border-[4px] border-[#1B58A2]">
