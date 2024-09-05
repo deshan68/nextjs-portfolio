@@ -1,4 +1,3 @@
-import React from "react";
 import {
   FaGithub,
   FaLinkedin,
@@ -6,6 +5,7 @@ import {
   FaMedium,
   FaEnvelope,
 } from "react-icons/fa";
+import { resume_url } from "@constants";
 
 const FixContent = ({ activeSection, setActiveSection }) => {
   const NavBarItem = ({ item }) => {
@@ -78,7 +78,7 @@ const FixContent = ({ activeSection, setActiveSection }) => {
 
   return (
     <div className="lg:w-1/2 flex flex-col lg:gap-y-0 gap-y-6 lg:py-20 py-10 lg:pl-36 pl-5 text-white justify-between">
-      <div className="flex flex-col  gap-y-3">
+      <div className="flex flex-col gap-y-3">
         <span className="text-6xl font-bold font-leagueSemiBold">
           Arun Deshan
         </span>
@@ -89,6 +89,11 @@ const FixContent = ({ activeSection, setActiveSection }) => {
           I build Seamless Digital Experiences, <br />
           Front-end to Back-end.
         </p>
+        <a href={resume_url} target="_blank">
+          <button className="text-xs cursor-pointer text-teal-300 border-teal-300 border px-4 py-2 rounded-sm">
+            RESUME
+          </button>
+        </a>
       </div>
 
       <ul className="list-none lg:flex flex-col items-start gap-6 text-sm font-extralight font-leagueLight hidden">

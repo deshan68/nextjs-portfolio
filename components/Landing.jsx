@@ -1,9 +1,10 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
 import FixContent from "./FixContent";
 import FlowContent from "./FlowContent";
-import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 import Loader from "./Loader";
+import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 import { db } from "@firebaseConfig";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { collection, query } from "firebase/firestore";
