@@ -45,7 +45,7 @@ const FlowContent = ({ activeSection, projectDetails }) => {
   }, [activeSection]);
 
   return (
-    <div className="lg:w-1/2 lg:overflow-scroll flex flex-col lg:pr-36 lg:pl-0 text-gray-400 font-leagueLight">
+    <div className="lg:w-1/2 lg:overflow-scroll flex flex-col lg:pr-36 lg:pl-0 text-gray-400 font-leagueLight" id="testDiv1">
       <div ref={aboutRef} id="about" className="lg:pt-20 pt-0">
         <div className="sticky lg:hidden top-0 backdrop-blur-md py-5 z-10 text-lg text-white font-leagueSemiBold px-5">
           ABOUT
@@ -92,8 +92,8 @@ const FlowContent = ({ activeSection, projectDetails }) => {
         <div className="sticky lg:hidden top-0 backdrop-blur-md py-5 z-30 text-lg text-white font-leagueSemiBold px-5">
           WRITING
         </div>
-        {blogPosts.map((item) => (
-          <WritingCard blogPost={item} />
+        {blogPosts.map((item, index) => (
+          <WritingCard blogPost={item} key={index} />
         ))}
       </div>
 
