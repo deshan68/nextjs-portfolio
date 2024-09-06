@@ -46,7 +46,7 @@ const FlowContent = ({ activeSection, projectDetails }) => {
 
   return (
     <div className="lg:w-1/2 lg:overflow-scroll flex flex-col lg:pr-36 lg:pl-0 text-gray-400 font-leagueLight" id="testDiv1">
-      <div ref={aboutRef} id="about" className="lg:pt-20 pt-0">
+      <section ref={aboutRef} id="about" className="lg:pt-20 pt-0">
         <div className="sticky lg:hidden top-0 backdrop-blur-md py-5 z-10 text-lg text-white font-leagueSemiBold px-5">
           ABOUT
         </div>
@@ -68,10 +68,10 @@ const FlowContent = ({ activeSection, projectDetails }) => {
           between with a passion for creating digital products that provide a
           seamless and pixel-perfect experience for users.
         </div>
-      </div>
+      </section>
 
       <div ref={experiencesRef} className="pt-20" id="experiences">
-        <div className="sticky lg:hidden top-0 backdrop-blur-md py-5 z-20 text-lg text-white font-leagueSemiBold px-5">
+        <div className="sticky top-0 backdrop-blur-md py-5 z-20 text-lg text-white font-leagueSemiBold px-5">
           EXPERIENCES
         </div>
         {[1].map((_, index) => (
@@ -80,7 +80,7 @@ const FlowContent = ({ activeSection, projectDetails }) => {
       </div>
 
       <div ref={projectsRef} className="pt-20 w-full" id="projects">
-        <div className="sticky lg:hidden top-0 backdrop-blur-md py-5 z-30 text-lg text-white font-leagueSemiBold px-5">
+        <div className="sticky top-0 backdrop-blur-md py-5 z-30 text-lg text-white font-leagueSemiBold px-5">
           PROJECTS
         </div>
         {projectDetails.map((project, index) => (
@@ -89,7 +89,7 @@ const FlowContent = ({ activeSection, projectDetails }) => {
       </div>
 
       <div ref={writingRef} className="pt-20" id="writing">
-        <div className="sticky lg:hidden top-0 backdrop-blur-md py-5 z-30 text-lg text-white font-leagueSemiBold px-5">
+        <div className="sticky top-0 backdrop-blur-md py-5 z-30 text-lg text-white font-leagueSemiBold px-5">
           WRITING
         </div>
         {blogPosts.map((item, index) => (
