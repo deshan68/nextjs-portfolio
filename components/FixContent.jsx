@@ -16,14 +16,16 @@ const FixContent = ({ activeSection, setActiveSection }) => {
         onClick={() => {
           setActiveSection(item);
         }}
-        className={`flex items-center cursor-pointer transition-all duration-300 ease-in-out ${
-          isActive ? "text-white" : "text-gray-500"
-        }`}
+        // className={`flex items-center cursor-pointer transition-all duration-300 ease-in-out ${
+        //   isActive ? "text-white" : "text-gray-500"
+        // }`}
+        className="flex items-center cursor-pointer text-gray-500"
       >
         <div
-          className={`transition-all duration-300 ease-in-out ${
-            isActive ? "w-10 bg-white" : "w-5 bg-gray-500"
-          }`}
+          // className={`transition-all duration-300 ease-in-out ${
+          //   isActive ? "w-10 bg-white" : "w-5 bg-gray-500"
+          // }`}
+          className="flex items-center cursor-pointer w-5 bg-gray-500"
           style={{
             height: "0.5px",
           }}
