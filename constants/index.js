@@ -1,4 +1,4 @@
-import { blog_1, blog_2 } from "@public";
+import { blog_1, blog_2, blog_3 } from "@public";
 
 export const resume_url =
   "https://drive.google.com/file/d/1WXHdrh4Eb88WR_aNQH5MjP_YUDrJ7103/view?usp=sharing";
@@ -19,5 +19,13 @@ export const blogPosts = [
     imageUrl: blog_2,
     blogUrl:
       "https://medium.com/@arundeshan/optional-chaining-react-tip-that-will-make-you-a-better-react-developer-aafe82b78f6b",
+  },
+  {
+    title: "How to Build a Recursive React Component in React",
+    description:
+      "Building recursive components in React can greatly simplify the process of displaying nested data, like file trees or hierarchical data.",
+    imageUrl: blog_3,
+    blogUrl:
+      "https://medium.com/@arundeshan/how-to-build-a-recursive-react-component-in-react-0d678dfe219d",
   },
 ];
