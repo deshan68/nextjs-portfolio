@@ -4,13 +4,13 @@ import { FaGithub, FaRegEye } from "react-icons/fa";
 const ProjectCard = ({ project }) => {
   return (
     <div className="text-base px-5 cursor-pointer flex w-full items-start gap-x-5 transition ease-in-out duration-500 transform hover:bg-white/5 hover:backdrop-blur-lg hover:shadow-lg rounded-lg p-5">
-      <div className="w-1/5">
+      <div className="w-2/5">
         <Image
           src={project.imageUrl}
           height={190}
           width={250}
           alt="Course Thumbnail"
-          className="w-32 h-auto rounded-lg"
+          className="w-44 h-auto rounded-lg"
           loading="lazy"
         />
       </div>
