@@ -78,6 +78,16 @@ const FixContent = ({ activeSection, setActiveSection }) => {
     );
   };
 
+  const ResumeLink = (
+    <a
+      className="text-xs cursor-pointer text-teal-300 border-teal-300 border px-4 py-2 rounded-sm"
+      href={resume_url}
+      target="_blank"
+    >
+      View Full Résumé
+    </a>
+  );
+
   return (
     <div className="lg:w-1/2 flex flex-col lg:gap-y-0 gap-y-6 lg:py-20 py-10 lg:pl-36 pl-5 text-white justify-between">
       <div className="flex flex-col gap-y-3">
@@ -85,17 +95,13 @@ const FixContent = ({ activeSection, setActiveSection }) => {
           Arun Deshan
         </span>
         <span className="text-2xl font-normal font-leagueLight">
-          Fullstack Developer
+          Software Engineer
         </span>
         <p className="font-light text-lg text-gray-500 leading-tight font-leagueLight">
-          I build Seamless Digital Experiences, <br />
-          Front-end to Back-end.
+          I build pixel-perfect, engaging, and <br />
+          accessible digital experiences.
         </p>
-        <a href={resume_url} target="_blank">
-          <button className="text-xs cursor-pointer text-teal-300 border-teal-300 border px-4 py-2 rounded-sm">
-            RESUME
-          </button>
-        </a>
+        <div>{ResumeLink}</div>
       </div>
 
       <ul className="list-none lg:flex flex-col items-start gap-6 text-sm font-extralight font-leagueLight hidden">
