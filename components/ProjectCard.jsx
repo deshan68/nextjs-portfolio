@@ -1,16 +1,17 @@
 import Image from "next/image";
 import { FaGithub, FaRegEye } from "react-icons/fa";
+import Chip from "./Chip";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="text-base px-5 cursor-pointer flex w-full items-start gap-x-5 transition ease-in-out duration-500 transform hover:bg-white/5 hover:backdrop-blur-lg hover:shadow-lg rounded-lg p-5">
-      <div className="w-2/5">
+    <div className="text-base px-5 cursor-pointer flex w-full items-start gap-x-5 transition ease-in-out duration-500 transform hover:bg-white/5 hover:backdrop-blur-lg hover:shadow-lg rounded-sm p-5">
+      <div className="w-44 bg-black">
         <Image
           src={project.imageUrl}
           height={190}
           width={250}
           alt="Course Thumbnail"
-          className="w-44 h-auto rounded-lg"
+          className="w-44 h-auto rounded-sm"
           loading="lazy"
         />
       </div>
@@ -39,12 +40,7 @@ const ProjectCard = ({ project }) => {
         </p>
         <div className="flex gap-x-3 pt-3">
           {project.categories.map((item) => (
-            <span
-              key={item}
-              className="rounded-full bg-teal-300/10 text-teal-300 px-2 py-0.5 text-xs"
-            >
-              {item}
-            </span>
+            <Chip key={item} item={item} />
           ))}
         </div>
       </div>

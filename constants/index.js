@@ -1,4 +1,4 @@
-import { blog_1, blog_2, blog_3, blog_4, blog_5 } from "@public";
+import { blog_1, blog_2, blog_3, blog_4, blog_5, blog_6 } from "@public";
 
 export const resume_url =
   "https://drive.google.com/file/d/1WXHdrh4Eb88WR_aNQH5MjP_YUDrJ7103/view?usp=sharing";
@@ -43,5 +43,13 @@ export const blogPosts = [
     imageUrl: blog_5,
     blogUrl:
       "https://medium.com/@arundeshan/your-first-steps-in-docker-building-a-simple-javascript-app-b851d0d975f1",
+  },
+  {
+    title: "Using Docker Volumes for Persistent Data in JavaScript Apps",
+    description:
+      "Docker containers allow applications to run in isolated environments, but by default, any data created inside the container is lost once it stops",
+    imageUrl: blog_6,
+    blogUrl:
+      "https://medium.com/@arundeshan/using-docker-volumes-for-persistent-data-in-javascript-apps-eddcbb9e8966",
   },
 ];
