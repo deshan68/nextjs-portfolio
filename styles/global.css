@@ -11,7 +11,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* scroll-behavior: smooth; */
+}
+
+body {
+  background-color: #111827;
 }
 
 @font-face {
@@ -58,4 +61,20 @@
 
 .active {
   @apply text-action_blue duration-300 bg-primary_blue transition ease-linear border-[0.5px] border-action_blue;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(40, 47, 64, 0.439)
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #40454e;
+  border-radius: 5px;
 }

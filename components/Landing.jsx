@@ -53,7 +53,7 @@ const Landing = () => {
   return (
     <main className="h-screen bg-gray-900" onMouseMove={handleMouseMove}>
       <motion.div
-        className="h-screen flex justify-between flex-col lg:flex-row overflow-y-scroll"
+        className="h-screen flex justify-between flex-col lg:flex-row"
         style={{
           background: backgroundStyle,
         }}
