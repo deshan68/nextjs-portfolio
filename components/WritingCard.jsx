@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { FaExternalLinkSquareAlt } from "react-icons/fa";
 
 const WritingCard = ({ blogPost }) => {
   return (
@@ -18,7 +17,6 @@ const WritingCard = ({ blogPost }) => {
         <div className="w-4/5">
           <span className="text-white font-bold flex items-start gap-x-2">
             <span className="text-white font-bold">{blogPost.title}</span>
-            <FaExternalLinkSquareAlt className="text-gray-400 h-3 w-3"/>
           </span>
           <p className="text-gray-400 leading-tight">
             {blogPost.description + "..."}

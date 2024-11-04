@@ -3,6 +3,12 @@ import { blog_1, blog_2, blog_3, blog_4, blog_5, blog_6 } from "@public";
 export const resume_url =
   "https://drive.google.com/file/d/1WXHdrh4Eb88WR_aNQH5MjP_YUDrJ7103/view?usp=sharing";
 
+export const wso2_experience = [
+  "Build Application Tracking System (ATS) supporting recruitment workflows, including job requisitions management, vacancies management, candidate management, interview scheduling",
+  "Engaged in full-stack development, using React and Redux for front-end features and Ballerina for back-end API services.",
+  "Managed relational databases in MySQL, optimizing data structures for efficient data handling and integration.",
+];
+
 export const blogPosts = [
   {
     title: "How to store password in db",

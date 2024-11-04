@@ -45,28 +45,31 @@ const FlowContent = ({ activeSection, projectDetails }) => {
   }, [activeSection]);
 
   return (
-    <div className="lg:w-1/2 lg:overflow-auto flex flex-col lg:pr-36 lg:pl-0 text-gray-400 font-leagueLight" id="testDiv1">
+    <div
+      className="lg:w-1/2 lg:overflow-auto flex flex-col lg:pr-36 lg:pl-0 text-gray-400 font-leagueLight"
+      id="testDiv1"
+    >
       <section ref={aboutRef} id="about" className="lg:pt-20 pt-0">
-        <div className="sticky lg:hidden top-0 backdrop-blur-md py-5 z-10 text-lg text-white font-leagueSemiBold px-5">
-          ABOUT
-        </div>
         <div className="text-lg font-leagueLight lg:px-0 px-5 leading-normal">
-          <span>I am Undergraduate at </span>
+          <span>I am a final-year undergraduate at </span>
           <span className="cursor-pointer text-white transition ease-in-out hover:text-teal-300 duration-300">
             <a href="https://www.sab.ac.lk/" target="_blank">
               Sabaragamuwa University of Sri Lanka{" "}
             </a>
           </span>
           and am currently pursing a B.Sc (Hons) Computing & Information Systems
-          Degree. I view myself as a coding enthusiast and I love tinkering with
-          tech, building stuff, and creating projects be it in web development,
-          mobile app development. <br />
+          Degree. I view myself as a coding enthusiast and I love tech, building
+          stuff, and creating projects be it in web development, mobile app
+          development.
           <br />
-          Even at home, Constantly learning, evolving, and getting proficient in
-          fields related to my career. I enjoy creating things that live on the
-          internet, whether that be websites, applications, or anything in
-          between with a passion for creating digital products that provide a
-          seamless and pixel-perfect experience for users.
+          <br />
+          I'm always learning, especially in areas that enhance my
+          career—currently focusing on C# for .NET, Golang for backend
+          development. Even at home, Constantly learning, evolving, and getting
+          proficient in fields related to my career. I enjoy creating things
+          that live on the internet, whether that be websites, applications, or
+          anything in between with a passion for creating digital products that
+          provide a seamless and pixel-perfect experience for users.
         </div>
       </section>
 

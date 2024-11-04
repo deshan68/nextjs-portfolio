@@ -8,6 +8,8 @@ import {
 import { resume_url } from "@constants";
 
 const FixContent = ({ activeSection, setActiveSection }) => {
+
+  
   const NavBarItem = ({ item }) => {
     const isActive = activeSection === item;
 

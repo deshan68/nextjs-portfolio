@@ -4,7 +4,7 @@ import Chip from "./Chip";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="text-base px-5 cursor-pointer flex w-full items-start gap-x-5 transition ease-in-out duration-500 transform hover:bg-white/5 hover:backdrop-blur-lg hover:shadow-lg rounded-sm p-5">
+    <div className="text-base px-5 cursor-default flex w-full items-start gap-x-5 transition ease-in-out duration-500 transform hover:bg-white/5 hover:backdrop-blur-lg hover:shadow-lg rounded-sm p-5">
       <div className="w-44 bg-black">
         <Image
           src={project.imageUrl}
