@@ -8,8 +8,6 @@ import {
 import { resume_url } from "@constants";
 
 const FixContent = ({ activeSection, setActiveSection }) => {
-
-  
   const NavBarItem = ({ item }) => {
     const isActive = activeSection === item;
 
@@ -100,8 +98,9 @@ const FixContent = ({ activeSection, setActiveSection }) => {
           Software Engineer
         </span>
         <p className="font-light text-lg text-gray-500 leading-tight font-leagueLight">
-          I build pixel-perfect, engaging, and <br />
-          accessible digital experiences.
+          Continuously exploring challenges,
+          <br />
+          where digital innovation can create impactful solutions ✨
         </p>
         <div>{ResumeLink}</div>
       </div>
