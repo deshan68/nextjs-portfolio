@@ -64,7 +64,7 @@ const FlowContent = ({ activeSection, projectDetails }) => {
           <br />
           <br />
           I'm always learning, especially in areas that enhance my
-          career—currently focusing on C# for .NET, Golang for backend
+          career—currently focusing on .NET and Golang for backend
           development. Even at home, Constantly learning, evolving, and getting
           proficient in fields related to my career. I enjoy creating things
           that live on the internet, whether that be websites, applications, or

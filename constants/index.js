@@ -1,4 +1,12 @@
-import { blog_1, blog_2, blog_3, blog_4, blog_5, blog_6 } from "@public";
+import {
+  blog_1,
+  blog_2,
+  blog_3,
+  blog_4,
+  blog_5,
+  blog_6,
+  blog_7,
+} from "@public";
 
 export const resume_url =
   "https://drive.google.com/file/d/1WXHdrh4Eb88WR_aNQH5MjP_YUDrJ7103/view?usp=sharing";
@@ -57,5 +65,13 @@ export const blogPosts = [
     imageUrl: blog_6,
     blogUrl:
       "https://medium.com/@arundeshan/using-docker-volumes-for-persistent-data-in-javascript-apps-eddcbb9e8966",
+  },
+  {
+    title: "How to containerize MERN application with Docker Compose",
+    description:
+      "Set up a Dockerfile in both the client and server projects. These files specify the",
+    imageUrl: blog_7,
+    blogUrl:
+      "https://medium.com/@arundeshan/how-to-containerize-mern-application-with-docker-compose-e5fec828c1d3",
   },
 ];
