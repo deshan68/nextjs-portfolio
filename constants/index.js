@@ -6,6 +6,7 @@ import {
   blog_5,
   blog_6,
   blog_7,
+  blog_8,
 } from "@public";
 
 export const resume_url =
@@ -73,5 +74,13 @@ export const blogPosts = [
     imageUrl: blog_7,
     blogUrl:
       "https://medium.com/@arundeshan/how-to-containerize-mern-application-with-docker-compose-e5fec828c1d3",
+  },
+  {
+    title: "Ballerina with MySQL for CRUD operations",
+    description:
+      "First, create a new Ballerina project by running the following command in your terminal",
+    imageUrl: blog_8,
+    blogUrl:
+      "https://medium.com/@arundeshan/ballerina-with-mysql-for-crud-operations-cd1c992e26bc",
   },
 ];
