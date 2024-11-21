@@ -10,8 +10,7 @@ import {
 } from "@public";
 
 export const resume_url =
-  "https://drive.google.com/file/d/1WXHdrh4Eb88WR_aNQH5MjP_YUDrJ7103/view?usp=sharing";
-
+  "https://drive.google.com/file/d/17hnW7n4X1994F5kfuGcLZF5VeUVwK1Is/view?usp=sharing";
 export const wso2_experience = [
   "Build Application Tracking System (ATS) supporting recruitment workflows, including job requisitions management, vacancies management, candidate management, interview scheduling",
   "Engaged in full-stack development, using React and Redux for front-end features and Ballerina for back-end API services.",
