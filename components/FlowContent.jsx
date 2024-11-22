@@ -6,9 +6,13 @@ import ExperienceCard from "./ExperienceCard";
 import ProjectCard from "./ProjectCard";
 import WritingCard from "./WritingCard";
 import { blogPosts } from "@constants";
+import { useRouter } from "next/navigation";
+import ViewAllButton from "./ViewAllButton";
 
 const FlowContent = ({ activeSection, projectDetails }) => {
   const [lastUpdatedDate, setLastUpdatedDate] = useState("");
+
+  const route = useRouter();
 
   const d = new Date();
 
@@ -64,12 +68,12 @@ const FlowContent = ({ activeSection, projectDetails }) => {
           <br />
           <br />
           I'm always learning, especially in areas that enhance my
-          career—currently focusing on .NET and Golang for backend
-          development. Even at home, Constantly learning, evolving, and getting
-          proficient in fields related to my career. I enjoy creating things
-          that live on the internet, whether that be websites, applications, or
-          anything in between with a passion for creating digital products that
-          provide a seamless and pixel-perfect experience for users.
+          career—currently focusing on .NET and Golang for backend development.
+          Even at home, Constantly learning, evolving, and getting proficient in
+          fields related to my career. I enjoy creating things that live on the
+          internet, whether that be websites, applications, or anything in
+          between with a passion for creating digital products that provide a
+          seamless and pixel-perfect experience for users.
         </div>
       </section>
 
@@ -89,15 +93,19 @@ const FlowContent = ({ activeSection, projectDetails }) => {
         {projectDetails.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}
+        <ViewAllButton title={"Project"} page={"project"} />
       </div>
 
       <div ref={writingRef} className="pt-20" id="writing">
         <div className="sticky top-0 backdrop-blur-md py-5 z-30 text-lg text-white font-leagueSemiBold px-5">
           WRITING
         </div>
-        {blogPosts.map((item, index) => (
-          <WritingCard blogPost={item} key={index} />
-        ))}
+        {blogPosts
+          .filter((item) => item.isMain === true)
+          .map((item, index) => (
+            <WritingCard blogPost={item} key={index} />
+          ))}
+        <ViewAllButton title={"Blog"} page={"blog"} />
       </div>
 
       <div className="py-20 px-5 lg:px-0" id="contact">

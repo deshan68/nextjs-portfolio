@@ -16,7 +16,7 @@ const ExperienceCard = () => {
             </a>
           </span>
         </div>
-        <ul class="list-disc">
+        <ul className="list-disc">
           {wso2_experience.map((item) => (
             <li key={item}>{item}</li>
           ))}
