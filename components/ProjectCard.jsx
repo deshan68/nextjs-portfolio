@@ -5,13 +5,13 @@ import Chip from "./Chip";
 const ProjectCard = ({ project }) => {
   return (
     <div className="text-base px-5 cursor-default flex w-full items-start gap-x-5 transition ease-in-out duration-500 transform hover:bg-white/5 hover:backdrop-blur-lg hover:shadow-lg rounded-sm p-5">
-      <div className="w-44 bg-black">
+      <div className="h-20 w-36 bg-black">
         <Image
           src={project.imageUrl}
           height={190}
           width={250}
           alt="Course Thumbnail"
-          className="w-44 h-auto rounded-sm"
+          className="h-20 w-36 rounded-sm object-cover"
           loading="lazy"
         />
       </div>
@@ -38,7 +38,7 @@ const ProjectCard = ({ project }) => {
         <p className="text-gray-400 mt-2 leading-tight">
           {project.description}
         </p>
-        <div className="flex gap-x-3 pt-3">
+        <div className="flex gap-x-2 pt-3">
           {project.categories.map((item) => (
             <Chip key={item} item={item} />
           ))}
