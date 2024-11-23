@@ -25,6 +25,7 @@ export const blogPosts = [
     imageUrl: blog_1,
     blogUrl:
       "https://medium.com/@arundeshan/how-to-store-password-in-db-cad6acb51651",
+    isMain: false,
   },
   {
     title: "Optional Chaining",
@@ -33,6 +34,7 @@ export const blogPosts = [
     imageUrl: blog_2,
     blogUrl:
       "https://medium.com/@arundeshan/optional-chaining-react-tip-that-will-make-you-a-better-react-developer-aafe82b78f6b",
+    isMain: false,
   },
   {
     title: "How to Build a Recursive React Component",
@@ -41,6 +43,7 @@ export const blogPosts = [
     imageUrl: blog_3,
     blogUrl:
       "https://medium.com/@arundeshan/how-to-build-a-recursive-react-component-in-react-0d678dfe219d",
+    isMain: true,
   },
   {
     title: "YAML for DevOps: A Beginner’s Guide",
@@ -49,6 +52,7 @@ export const blogPosts = [
     imageUrl: blog_4,
     blogUrl:
       "https://medium.com/@arundeshan/yaml-for-devops-a-beginners-guide-789e8ecb23d2",
+    isMain: false,
   },
   {
     title: "Your First Steps in Docker: Building a Simple JavaScript App",
@@ -57,6 +61,7 @@ export const blogPosts = [
     imageUrl: blog_5,
     blogUrl:
       "https://medium.com/@arundeshan/your-first-steps-in-docker-building-a-simple-javascript-app-b851d0d975f1",
+    isMain: true,
   },
   {
     title: "Using Docker Volumes for Persistent Data in JavaScript Apps",
@@ -65,6 +70,7 @@ export const blogPosts = [
     imageUrl: blog_6,
     blogUrl:
       "https://medium.com/@arundeshan/using-docker-volumes-for-persistent-data-in-javascript-apps-eddcbb9e8966",
+    isMain: true,
   },
   {
     title: "How to containerize MERN application with Docker Compose",
@@ -73,6 +79,7 @@ export const blogPosts = [
     imageUrl: blog_7,
     blogUrl:
       "https://medium.com/@arundeshan/how-to-containerize-mern-application-with-docker-compose-e5fec828c1d3",
+    isMain: true,
   },
   {
     title: "Ballerina with MySQL for CRUD operations",
@@ -81,5 +88,6 @@ export const blogPosts = [
     imageUrl: blog_8,
     blogUrl:
       "https://medium.com/@arundeshan/ballerina-with-mysql-for-crud-operations-cd1c992e26bc",
+    isMain: true,
   },
 ];

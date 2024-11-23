@@ -1,3 +1,4 @@
+import { DataProvider } from "@context/DataContextProvider";
 import "@styles/global.css";
 import Head from "next/head";
 
@@ -8,7 +9,9 @@ const RootLayout = ({ children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
-        <main className="relative">{children}</main>
+        <DataProvider>
+          <main className="relative">{children}</main>
+        </DataProvider>
       </body>
     </html>
   );

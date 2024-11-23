@@ -1,22 +1,16 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import FixContent from "./FixContent";
 import FlowContent from "./FlowContent";
 import Loader from "./Loader";
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
-import { db } from "@firebaseConfig";
-import { useCollection } from "react-firebase-hooks/firestore";
-import { collection, query } from "firebase/firestore";
+import { useProject } from "@context/DataContextProvider";
 
 const Landing = () => {
-  const [activeSection, setActiveSection] = useState("ABOUT");
-  const [projectsDataLoading, setProjectsDataLoading] = useState(true);
-  const [projectDetails, setProjectDetails] = useState([]);
+  const [activeSection, setActiveSection] = useState("");
 
-  const [projects, loading, error] = useCollection(
-    query(collection(db, "files"))
-  );
+  const { projects, loading, error } = useProject();
 
   let mouseX = useMotionValue(0);
   let mouseY = useMotionValue(0);
@@ -36,17 +30,7 @@ const Landing = () => {
     )
   `;
 
-  useEffect(() => {
-    projects?.docs.map((item) => {
-      setProjectDetails((prev) => [...prev, item.data()]);
-    });
-  }, [projects]);
-
-  useEffect(() => {
-    setProjectsDataLoading(loading);
-  }, [loading]);
-
-  if (projectsDataLoading) {
+  if (loading) {
     return <Loader />;
   }
 
@@ -64,7 +48,7 @@ const Landing = () => {
         />
         <FlowContent
           activeSection={activeSection}
-          projectDetails={projectDetails}
+          projectDetails={projects.filter((p) => p.isMain === true)}
         />
       </motion.div>
     </main>
