@@ -29,10 +29,10 @@ const Table = () => {
             <th scope="col" className="px-6 py-3">
               Project
             </th>
-            <th scope="col" className="px-6 py-3">
+            <th scope="col" className="px-6 py-3 hidden md:table-cell">
               Description
             </th>
-            <th scope="col" className="px-6 py-3">
+            <th scope="col" className="px-6 py-3 hidden md:table-cell">
               Built with
             </th>
             <th scope="col" className="px-6 py-3">
@@ -46,18 +46,17 @@ const Table = () => {
               key={index}
               className="border-b border-b-gray-500/30 font-leagueExtraThin last:border-none"
             >
-              <th
-                scope="row"
-                className="px-6 py-4 font-medium whitespace-nowrap"
-              >
-                {item?.year}
-              </th>
-              <td className="px-6 py-4 text-white min-w-max">{item.title} </td>
-              <td className="px-6 py-4 text-white">{item.description}</td>
-              <td className="px-6 py-4 flex gap-x-2">
-                {item.categories.map((item) => (
-                  <Chip key={item} item={item} />
-                ))}
+              <td className="px-6 py-4">{item?.year}</td>
+              <td className="px-6 py-4 text-white">{item.title} </td>
+              <td className="px-6 py-4 text-white hidden md:table-cell">
+                {item.description}
+              </td>
+              <td className="px-6 py-4 hidden md:table-cell">
+                <div className="flex flex-wrap gap-1">
+                  {item.categories.map((item) => (
+                    <Chip key={item} item={item} />
+                  ))}
+                </div>
               </td>
               <td className="px-6 py-4">
                 <a

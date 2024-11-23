@@ -8,7 +8,7 @@ const Table = () => {
   const { loading } = useProject();
 
   if (loading) {
-    return <TableSkeleton heads={["Year", "Title", "Summery", "Link"]} />;
+    return <TableSkeleton heads={["Year", "Title", "Description", "Link"]} />;
   }
 
   return (
@@ -22,8 +22,8 @@ const Table = () => {
             <th scope="col" className="px-6 py-3">
               Title
             </th>
-            <th scope="col" className="px-6 py-3">
-              Summery
+            <th scope="col" className="px-6 py-3 hidden md:table-cell">
+              Description
             </th>
             <th scope="col" className="px-6 py-3">
               Link
@@ -36,14 +36,15 @@ const Table = () => {
               key={index}
               className="border-b border-b-gray-500/30 font-leagueExtraThin last:border-none"
             >
-              <th
+              <td
                 scope="row"
                 className="px-6 py-4 font-medium whitespace-nowrap"
               >
                 2024
-              </th>
-              <td className="px-6 py-4 text-white min-w-max">{item.title} </td>
-              <td className="px-6 py-4">{item.description}</td>
+              </td>
+              <td className="px-6 py-4 text-white">{item.title} </td>
+              <td scope="col" className="px-6 py-3 hidden md:table-cell">
+              {item.description}</td>
               <td className="px-6 py-4">
                 <a
                   className="cursor-pointer text-gray-500 flex items-start gap-x-2 group hover:text-white transform duration-200"

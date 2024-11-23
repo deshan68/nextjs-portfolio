@@ -9,7 +9,7 @@ const AllProjects = () => {
   const route = useRouter();
 
   return (
-    <section className="px-36 pt-20 flex flex-col items-start gap-y-10">
+    <section className="lg:px-36 px-5 lg:pt-20 pt-10 flex flex-col items-start gap-y-5">
       <div>
         <button
           onClick={() => route.push("/")}

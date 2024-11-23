@@ -18,18 +18,11 @@ const TableSkeleton = ({ heads }) => {
             key={index}
             className="border-b border-b-gray-500/30 font-leagueExtraThin last:border-none"
           >
-            <td className="px-6 py-4">
-              <div className="h-4 w-16 bg-gray-700 rounded animate-pulse"></div>
-            </td>
-            <td className="px-6 py-4">
-              <div className="h-4 w-32 bg-gray-700 rounded animate-pulse"></div>
-            </td>
-            <td className="px-6 py-4">
-              <div className="h-4 w-48 bg-gray-700 rounded animate-pulse"></div>
-            </td>
-            <td className="px-6 py-4">
-              <div className="h-4 w-20 bg-gray-700 rounded animate-pulse"></div>
-            </td>
+            {Array.from({ length: heads.length }).map((_, index) => (
+              <td key={index} className="px-6 py-4">
+                <div className="h-4 w-16 bg-gray-700 rounded animate-pulse"></div>
+              </td>
+            ))}
           </tr>
         ))}
       </tbody>
