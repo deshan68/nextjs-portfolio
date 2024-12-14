@@ -98,9 +98,9 @@ const FixContent = ({ activeSection, setActiveSection }) => {
           Software Engineer
         </span>
         <p className="font-light text-lg text-gray-500 leading-tight font-leagueLight">
-          Continuously exploring challenges,
+          Continuously exploring challenges where digital
           <br />
-          where digital innovation can create impactful solutions ✨
+          innovation can create impactful solutions ✨
         </p>
         <div>{ResumeLink}</div>
       </div>
