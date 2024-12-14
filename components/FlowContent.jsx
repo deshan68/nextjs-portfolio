@@ -93,7 +93,7 @@ const FlowContent = ({ activeSection, projectDetails }) => {
         {projectDetails.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}
-        <ViewAllButton title={"Project"} page={"project"} />
+        <ViewAllButton title={"Project"} page={"projects"} />
       </div>
 
       <div ref={writingRef} className="pt-20" id="writing">
@@ -105,7 +105,7 @@ const FlowContent = ({ activeSection, projectDetails }) => {
           .map((item, index) => (
             <WritingCard blogPost={item} key={index} />
           ))}
-        <ViewAllButton title={"Blog"} page={"blog"} />
+        <ViewAllButton title={"Blog"} page={"blogs"} />
       </div>
 
       <div className="py-20 px-5 lg:px-0" id="contact">

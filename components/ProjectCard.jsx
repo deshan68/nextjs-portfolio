@@ -38,7 +38,7 @@ const ProjectCard = ({ project }) => {
         <p className="text-gray-400 mt-2 leading-tight">
           {project.description}
         </p>
-        <div className="flex gap-x-2 pt-3">
+        <div className="flex gap-2 pt-3 flex-wrap">
           {project.categories.map((item) => (
             <Chip key={item} item={item} />
           ))}
