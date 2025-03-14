@@ -40,11 +40,12 @@ const Table = () => {
                 scope="row"
                 className="px-6 py-4 font-medium whitespace-nowrap"
               >
-                2024
+                {item.date}
               </td>
               <td className="px-6 py-4 text-white">{item.title} </td>
               <td scope="col" className="px-6 py-3 hidden md:table-cell">
-              {item.description}</td>
+                {item.description}
+              </td>
               <td className="px-6 py-4">
                 <a
                   className="cursor-pointer text-gray-500 flex items-start gap-x-2 group hover:text-white transform duration-200"

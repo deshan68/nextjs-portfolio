@@ -28,7 +28,7 @@ const FlowContent = ({ activeSection, projectDetails }) => {
       );
       setLastUpdatedDate(response.data[0].commit.committer.date.split("T")[0]);
     } catch (err) {
-      console.log(err);
+      console.error(err);
     }
   };
 
