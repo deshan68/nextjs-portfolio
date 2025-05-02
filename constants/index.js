@@ -11,11 +11,12 @@ import {
 } from "@public";
 
 export const resume_url =
-  "https://drive.google.com/file/d/1nIrNqhqQEwmBDtCjb3QuQWFGe31sLed_/view?usp=sharing";
+  "https://drive.google.com/file/d/1wWftyWsoGnq4fuzJDzzxnHUU-OzD8ApB/view?usp=sharing";
 export const wso2_experience = [
-  "Build Application Tracking System (ATS) supporting recruitment workflows, including job requisitions management, vacancies management, candidate management, interview scheduling",
-  "Engaged in full-stack development, using React and Redux for front-end features and Ballerina for back-end API services.",
-  "Managed relational databases in MySQL, optimizing data structures for efficient data handling and integration.",
+  "Built a custom Applicant Tracking System (ATS) to support recruitment workflows including job requisition management, vacancy tracking, candidate management, and interview scheduling",
+  "Contributed to full-stack development, implementing front-end components with React.js, MUI, and Redux.",
+  "Developed and deployed back-end services using Ballerina and Choreo, enabling seamless API integration",
+  "Designed and optimized MySQL database schemas for efficient data storage and fast retrieval in multi-user environments",
 ];
 
 export const blogPosts = [

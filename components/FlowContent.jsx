@@ -55,16 +55,18 @@ const FlowContent = ({ activeSection, projectDetails }) => {
     >
       <section ref={aboutRef} id="about" className="lg:pt-20 pt-0">
         <div className="text-lg font-leagueLight lg:px-0 px-5 leading-normal">
-          <span>I am a final-year undergraduate at </span>
+          <span>
+            I have graduated with a B.Sc (Hons) in Computing & Information
+            Systems from{" "}
+          </span>
           <span className="cursor-pointer text-white transition ease-in-out hover:text-teal-300 duration-300">
             <a href="https://www.sab.ac.lk/" target="_blank">
-              Sabaragamuwa University of Sri Lanka{" "}
+              Sabaragamuwa University of Sri Lanka.{" "}
             </a>
           </span>
-          and am currently pursing a B.Sc (Hons) Computing & Information Systems
-          Degree. I view myself as a coding enthusiast and I love tech, building
-          stuff, and creating projects be it in web development, mobile app
-          development.
+          I consider myself a coding enthusiast with a passion for technology,
+          building innovative solutions, and creating projects in web
+          development, mobile app development, and beyond.
           <br />
           <br />
           I'm always learning, especially in areas that enhance my
